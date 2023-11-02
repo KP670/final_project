@@ -16,7 +16,7 @@
 
     /* color */
         /* background */
-    --doc-background-color: linear-gradient(to bottom, rgb(252, 196, 92), rgb(253, 92, 92));
+    --doc-background-color: linear-gradient(to bottom, rgb(255, 211, 128), rgb(255, 128, 128));
         /* doc */
     --primary-col: #ff7b23ff;
     --secondary-col: #fff674ff; 
