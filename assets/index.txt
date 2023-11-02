@@ -1,0 +1,15 @@
+Name
+    Cozy Palms Cafe
+
+Slogan
+    A Tropical Oasis in Saipan
+
+Description
+    Cozy Palms Cafe is more than just a coffee shop. It’s a place where you can relax, unwind, and enjoy the island life. Whether you’re looking for a delicious breakfast, a refreshing smoothie, or a mouthwatering sandwich, we have something for everyone. Our menu features local ingredients, organic coffee, and vegan options. Our staff are friendly, helpful, and ready to make you feel at home. Come and experience the cozy, islander vibes at Cozy Palms Cafe today. You’ll be glad you did.
+
+    Colors
+        BG -- Brown
+        FG -- Orange
+ Secondary -- Yellow
+    Accent -- Green
+
