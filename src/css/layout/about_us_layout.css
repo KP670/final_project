@@ -1,0 +1,21 @@
+
+.mission-statement {
+    height: 100vh;
+}
+
+.mission-statement blockquote {
+    width: 80%;
+    margin: auto;
+    font-size: 2em;
+}
+
+.mission-statement blockquote::before {
+    content: "&quot;";
+    display: block;
+}
+
+.mission-statement blockquote::after {
+    content: "&quot;";
+    text-align: right;
+    display: block;
+}

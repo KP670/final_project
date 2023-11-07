@@ -20,18 +20,22 @@
     --doc-background-color: linear-gradient(to bottom, rgb(255, 211, 128), rgb(255, 128, 128));
         
         /* doc */
-    --primary-col: #ff7b23ff;
-    --secondary-col: #fff674ff; 
-    --accent-col: #8bbaffff;
-        
-        /* shadow */
-        --nav-shadow-color: rgb(146, 71, 22);
-        
-        /* semi-transparent */
+    --primary-col: #ff7b23;
+    --secondary-col: #fff674; 
+    --accent-col: #8bbaff;
+         
+    --primary-col-desat: #ffb482;
+    --secondary-col-desat: #fff9ac; 
+    --accent-col-desat: #bfd9ff;
+    
+    /* semi-transparent */
     --primary-col-transparent: #ff7b2388;
     --secondary-col-transparent: #fff67488; 
     --accent-col-transparent: #8bbaff88;
 
+        /* shadow */
+    --nav-shadow-color: rgb(146, 71, 22);
+    
         /* footer */
     --footer-link-font-color: rgb(211, 211, 211);
 }
@@ -64,16 +68,22 @@ header h1 {
     font-family: var(--large-text-font);
     text-align: center;
     transition-property: transform color box-shadow;
-    transition-duration: 0.5s;
+    transition-duration: 0.25s;
     box-shadow: 4px 4px 2px var(--nav-shadow-color);
 }
 
 .nav-list a:hover {
-    transform: scale(0.5, 0.5);
+    background-color: var(--primary-col-desat);
 }
 
 .nav-list a:active {
-    box-shadow: 2px 2px 2px var(--nav-shadow-color);
+    box-shadow: 3px 3px 2px var(--nav-shadow-color);
+
+}
+
+.nav-list a:active,
+.nav-list li:active {
+    transform: translate(1px, 1px);
 }
 
 /* footer */
@@ -97,4 +107,3 @@ footer a {
     color: var(--footer-link-font-color);
     text-decoration: none;
 }
-

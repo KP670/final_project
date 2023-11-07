@@ -106,9 +106,31 @@ footer .social-media {
     text-align: center;
 }
 
+button {
+    display: none;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+}
+
 /* main */
 main {
     display: flex;
     flex-direction: column;
     align-content: center;
+}
+
+@media screen and (max-width: 830px) {
+    header {
+        justify-content: center;
+    }
+    
+    header nav {
+        display: none;
+    }
+
+    button {
+        display: block;
+    }
 }

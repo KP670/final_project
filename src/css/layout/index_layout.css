@@ -1,12 +1,12 @@
+
 section {
     margin: 2em
 }
 
-.home{
+.landing{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.25fr 1fr;
     grid-template-rows: 2fr 1fr 1fr;
-    --text-color: #202020;
     margin: 0px 0px 2em 0px;
     overflow: hidden;
     height: 100vh;
@@ -16,31 +16,27 @@ section {
     background-attachment: fixed;
 }
 
-.home::after {
+.landing::before {
     content: "";
     position: absolute;
-    background: url("../../images/index/home_background.jpeg");
+    background: url("../../images/index/landing_background.jpeg");
     background-size: cover;
     background-position: center;
     z-index: -1;
+    height: 100vh;
     inset: 0;
     opacity: 25%;
-    /* object-fit: fill; */
 }
 
-.home h1 {
+.landing h1 {
     grid-column: 1/-1;
     width: 75%;
-    border-radius: 1em;
-    font-family: var(--logo-font);
-    color: var(--text-color);
     font-size: 7.5em;
     margin: 0.5em;
-    text-shadow: 15px 10px 10px rgba(145, 145, 145, 0.614);
-
 }
 
 .menu-link {
+    grid-row: 2/3;
     justify-self: center;
     text-align: center;
 }
@@ -50,10 +46,7 @@ section {
     margin:2em;
     padding: 1em .5em;
     border-radius: 1em;
-    background-color: var(--accent-col);
     font-size: 1.5em;
-    color: rgb(20, 20, 20);
-    text-decoration: none;
 }
 
 .flex-container {
@@ -66,13 +59,7 @@ section {
 }
 .schedule table {
     margin: auto;
-    border:1px solid #202020;
-    border-collapse: collapse;
-}
-
-.schedule table >td,
-.schedule table >th {
-    border: 1px solid #202020;
+    width: 90%;
 }
 
 .description {
@@ -84,11 +71,27 @@ section {
 }
 
 .description img {
-    outline: 16px ridge white ;
     justify-self: center;
     width: 75%;
 }
 
 .description p {
     font-size: 2em;
+}
+
+@media screen and (max-width: 1220px) {
+    .landing {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .landing h1 {
+        width: 100%;
+        margin: auto;
+        font: 5em;
+    }
+}
+
+@media screen and (max-width: 830) {
+
 }
