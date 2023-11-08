@@ -52,13 +52,35 @@
     display: flex;
     flex-direction: column;
 }
-/* Opening Hours */
+/* Schedule-related*/
+    /* Opening Hours */
 .schedule {
+    display: grid;
     width: 100%;
+    grid-template-columns: 1fr 1fr;
 }
 .opening-hours-table {
     margin: auto;
     width: 90%;
+}
+
+.opening-hours h1 {
+    text-align: center;
+    font-size: 2em;
+} 
+    /* Reservation */
+.reservation-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reservation-action h1 {
+    text-align: center;
+    font-size: 2em;
+}
+.reservation-link {
+    margin: auto;
 }
 
 /* Description */

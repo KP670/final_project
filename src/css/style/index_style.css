@@ -40,12 +40,17 @@
 .schedule {
     margin: 0px;
 }
+
+.opening-hours h1,
+.reservation-action h1 {
+    font-family: var(--heading-font);
+}
+
 .opening-hours-table {
     width: 90%;
     margin: auto;
     border: 8px ridge #747474;
     border-collapse: collapse;
-    text-align: center;
 }
 
 
@@ -55,6 +60,7 @@
     border: 1px solid #202020;
 }
 
+/* Description */
 .description h1 {
     font-family: var(--heading-font);
 }
