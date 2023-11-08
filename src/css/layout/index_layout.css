@@ -1,7 +1,4 @@
-
-section {
-    margin: 2em
-}
+@charset "utf-8";
 
 .landing{
     display: grid;
@@ -9,8 +6,11 @@ section {
     grid-template-rows: 2fr 1fr 1fr;
     margin: 0px 0px 2em 0px;
     overflow: hidden;
+
     height: 100vh;
-    width: 100vw;
+    height: 100svh;
+
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -23,7 +23,6 @@ section {
     background-size: cover;
     background-position: center;
     z-index: -1;
-    height: 100vh;
     inset: 0;
     opacity: 25%;
 }
@@ -53,33 +52,45 @@ section {
     display: flex;
     flex-direction: column;
 }
-
+/* Opening Hours */
 .schedule {
     width: 100%;
 }
-.schedule table {
+.opening-hours-table {
     margin: auto;
     width: 90%;
 }
 
+/* Description */
 .description {
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    grid-template-rows: 2fr 1fr 4fr;
+}
+
+.description h1 {
+    grid-column: 2/-1;
+    grid-row: 2/3;
+    font-size: 4em;
+}
+
+
+.description p {
+    grid-column: 2/-1;
+    grid-row: 3/-1;
+    align-self: baseline;
+    font-size: 2em;
 }
 
 .description img {
+    grid-row: 1/-1;
     justify-self: center;
     width: 75%;
 }
 
-.description p {
-    font-size: 2em;
-}
-
-@media screen and (max-width: 1220px) {
+@media only screen and (max-width: 1220px) {
     .landing {
         grid-template-columns: 1fr;
         text-align: center;
@@ -92,6 +103,6 @@ section {
     }
 }
 
-@media screen and (max-width: 830px) {
+@media only screen and (max-width: 830px) {
 
 }

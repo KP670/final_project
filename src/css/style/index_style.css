@@ -1,3 +1,4 @@
+@charset "utf-8";
 
 .landing {
     --text-color: #202020;
@@ -39,19 +40,23 @@
 .schedule {
     margin: 0px;
 }
-.schedule table {
+.opening-hours-table {
     width: 90%;
     margin: auto;
-    border: 2px double #202020;
+    border: 8px ridge #747474;
     border-collapse: collapse;
     text-align: center;
 }
 
 
-.schedule table > tbody > td,
-.schedule table > thead > th {
+.schedule table  td,
+.schedule table  th {
     padding: 0.75em;
     border: 1px solid #202020;
+}
+
+.description h1 {
+    font-family: var(--heading-font);
 }
 
 .description img {

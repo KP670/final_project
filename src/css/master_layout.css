@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* Reset */
 body {
     box-sizing: border-box;
@@ -91,9 +93,6 @@ footer {
 }
 
 footer > .social-media > ul {
-    display: flex;
-    justify-content: space-around;
-    
 }
 
 footer .quick-links,
@@ -121,7 +120,12 @@ main {
     align-content: center;
 }
 
-@media screen and (max-width: 830px) {
+@media only screen and (max-width: 720px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
     header {
         justify-content: center;
     }
@@ -132,5 +136,11 @@ main {
 
     button {
         display: block;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

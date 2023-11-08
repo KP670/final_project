@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Cozy Palms Cafe -- Home</title>
 
     <link rel="stylesheet" href="css/master_layout.css">
@@ -16,7 +16,7 @@
     <header>
         <a href="#main-content" id="skip-nav">Skip to content</a>
         <div class="logo-name">
-            <img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo">
+            <a href="index.html"><img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo"></a>
             <h1 class="name">Cozy Palms Cafe</h1>
         </div>  
         <nav>
@@ -41,32 +41,30 @@
 
         <div class="flex-container">
             <section class="schedule">
-                <table>
-                    <thead>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                        <th>Saturday</th>
-                        <th>Sunday</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>0800-2100</td>
-                            <td>0800-2100</td>
-                            <td>0800-2100</td>
-                            <td>0800-2100</td>
-                            <td>0800-2100</td>
-                            <td>0800-2100</td>
-                            <td>1100-1900</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <section class="opening-hours">
+                    <h1>Opening Hours</h1>
+                    <table class="opening-hours-table">
+                        <tbody>
+                                <tr>
+                                    <th>Weekdays</th>
+                                    <td>0800-2100</td>
+                                </tr>
+                                <tr>
+                                    <th>Weekends</th>
+                                    <td>1100-1900</td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="reservation-action">
+                    <h1>Click here to make a reservation</h1>
+                    <a href="contact_us.html" class="reservation-link"><img src="images/glyphs/calendar_icon.svg" alt="resevation-link" srcset></a>
+                </section>
             </section>
             <section class="description">
-                <img src="images/index/night_work.png" alt="late night image">
+                <h1>Lorem, ipsum dolor.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sed asperiores beatae odio libero sit. Ut, aperiam! Consequatur delectus nostrum maiores sapiente quidem, optio fuga illum aliquid quisquam expedita repudiandae?</p>
+                <img src="images/index/night_work.png" alt="late night image">
             </section>
         </div>
     </main>
@@ -95,6 +93,7 @@
         </div>
         <div class="copyright">Kristian Pestano &copy; 2023</div>
     </footer>
+
     <button>Navigation</button>
 </body>
 </html>
