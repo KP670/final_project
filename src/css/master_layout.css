@@ -120,7 +120,7 @@ main {
     align-content: center;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 875px) {
     body {
         width: 100%;
         overflow-x: hidden;
