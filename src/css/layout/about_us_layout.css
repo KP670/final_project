@@ -1,22 +1,38 @@
 @charset "utf-8";
 
+.landing {
+    height: 100svh;
+    outline: 0px 0px 2px 0px solid rgba(122, 122, 122, 0.236);
+}
+
+.about-us-heading,
 .mission-statement {
-    height: 100vh;
-}
-
-.mission-statement blockquote {
     width: 80%;
-    margin: auto;
-    font-size: 2em;
+    padding: 1em;
+    margin:  1em auto;
+    font-size: 1.75em;
 }
 
-.mission-statement blockquote::before {
-    content: "&quot;";
+.about-us-heading {
+    width: max-content;
+    text-align: center;
+}
+
+/* Mission Statement */
+.mission-statement::before,
+.mission-statement::after {
     display: block;
+    font-size: 5em;
 }
 
-.mission-statement blockquote::after {
-    content: "&quot;";
+.mission-statement::before {
+    content: open-quote;
+}
+
+.mission-statement::after {
+    content: close-quote;
     text-align: right;
-    display: block;
 }
+
+
+/*  */
