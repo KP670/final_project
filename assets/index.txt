@@ -4,7 +4,7 @@ Name
 Slogan
     A Tropical Oasis in Saipan
 
-Description
+Selling point #1
     Cozy Palms Cafe is more than just a coffee shop. It’s a place where you can relax, unwind, and enjoy the island life. Whether you’re looking for a delicious breakfast, a refreshing smoothie, or a mouthwatering sandwich, we have something for everyone. Our menu features local ingredients, organic coffee, and vegan options. Our staff are friendly, helpful, and ready to make you feel at home. Come and experience the cozy, islander vibes at Cozy Palms Cafe today. You’ll be glad you did.
 
     Colors
@@ -13,3 +13,5 @@ Description
  Secondary -- Yellow
     Accent -- Green
 
+Selling Point #2
+	We have a cozy and quiet atmosphere, with free Wi-Fi and power outlets. You can enjoy our delicious coffee and snacks, and get discounts with your student ID. You can also meet other students and make new friends. The Cozy Palms Cafe is the best place to study at night in Saipan. Come and see for yourself!

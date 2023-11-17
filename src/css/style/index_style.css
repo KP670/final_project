@@ -54,17 +54,21 @@
 }
 
 
-.schedule table  td,
-.schedule table  th {
+.schedule table td,
+.schedule table th {
     padding: 0.75em;
     border: 1px solid #202020;
 }
 
-/* Description */
-.description h1 {
+/* selling-point-1 */
+.selling-points h1 {
     font-family: var(--heading-font);
 }
 
-.description img {
+.selling-points img {
+    outline: 16px ridge white ;
+}
+
+.night-work-img {
     outline: 16px ridge white ;
 }
