@@ -1,6 +1,18 @@
 @charset "utf-8";
 
-/* Reset */
+/* class-specific styling */
+
+/* Flex-Box */
+.flex-container {
+    display: flex;
+}
+
+    /* Grid */
+.grid-container {
+    display: grid;
+}
+
+/* Body Reset */
 body {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +20,7 @@ body {
     overflow-x: hidden;
 }
 
-/* quick nav for accessibility */
+/* Quick nav for accessibility */
 #skip-nav {
     position:absolute;
     pointer-events: none;
@@ -20,9 +32,13 @@ body {
 #skip-nav:focus { color: white;}
 
 /* header layout */
+
+header.flex-container {
+    align-items: center;
+}
+
 header {
     pointer-events: auto;
-    display: flex;
     
     position: fixed;
     width: 100%;
@@ -31,11 +47,10 @@ header {
     z-index: 2;
     
     padding: 10px 5px;    
-    align-items: center;
 }
 
-.logo-name {
-    display: flex;
+.logo-name.flex-container {
+    align-items: center;
 }
 
 
@@ -46,20 +61,23 @@ header {
 
 .name {
     text-align: center;
+    font-size: max(2.25em);
 }
 
 
 /* nav layout */
-header nav {
-    /* margin: 10px; */
-    display: flex;
+nav.flex-container {
     flex-grow: 5;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+    /* nav list */
+.nav-list.flex-container {
     justify-content: flex-end;
 }
 
 .nav-list {
-    display: flex;
-    justify-content: space-between;
     margin: 0;
     padding: 1em;
     
@@ -83,26 +101,29 @@ header nav {
 
 /* footer layout */
 footer {
-    display: grid;
-    grid-template-rows: 3fr .1fr;
-    grid-template-columns: 1fr 1fr 1fr;
     padding: 16px;
+}
+
+footer > .flex-container {
+    justify-content: space-between;
+
+    width: 100%;
 }
 
 .banner {
     width: 720px;
 }
 
-footer > .social-media > ul {
-}
+/* .social-media > ul > li::before {
+    content: url();
+} */
 
-footer .quick-links,
-footer .social-media {
+footer > .flex-container .quick-links,
+footer > .flex-container .social-media {
     padding: 1em
 }
 
 .copyright {
-    grid-column: span 3;
     text-align: center;
 }
 
@@ -115,9 +136,13 @@ button {
 }
 
 /* main */
-main {
-    display: flex;
+main .flex-container {
     flex-direction: column;
+}
+
+main {
+    width: 80%;
+    margin: auto;
     align-content: center;
 }
 

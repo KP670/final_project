@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 .landing {
+    height: 100vh;
     height: 100svh;
-    outline: 0px 0px 2px 0px solid rgba(122, 122, 122, 0.236);
 }
 
 .about-us-heading,

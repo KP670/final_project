@@ -41,8 +41,8 @@
     margin: 0px;
 }
 
-.opening-hours h1,
-.reservation-action h1 {
+.opening-hours h2,
+.reservation-action h2 {
     font-family: var(--heading-font);
 }
 
@@ -61,7 +61,7 @@
 }
 
 /* selling-point-1 */
-.selling-points h1 {
+.selling-points h2 {
     font-family: var(--heading-font);
 }
 

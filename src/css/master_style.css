@@ -56,7 +56,7 @@ header {
     background: linear-gradient(to bottom, var(--accent-col), var(--accent-col-partial-transparent), var(--accent-col-transparent));
 }
 
-header h1 {
+span.name {
     font-family: var(--logo-font);
 }
 
@@ -70,7 +70,7 @@ header h1 {
     text-decoration: none;
     font-family: var(--large-text-font);
     text-align: center;
-    transition-property: transform color box-shadow;
+    transition-property: transform, color, box-shadow;
     transition-duration: 0.25s;
     box-shadow: 4px 4px 2px var(--nav-shadow-color);
 }

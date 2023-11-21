@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cozy Palms Cafe -- Home</title>
 
     <link rel="stylesheet" href="css/master_layout.css">
@@ -11,38 +11,43 @@
     <link rel="stylesheet" href="css/style/index_style.css">
     
     <link rel="shortcut icon" href="images/fav_icon/favicon.ico" type="image/x-icon">
+
+    
+    <script src="js/main.js"></script>
 </head>
 <body>
     <header>
-        <a href="#main-content" id="skip-nav">Skip to content</a>
-        <div class="logo-name">
-            <a href="index.html"><img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo"></a>
-            <h1 class="name">Cozy Palms Cafe</h1>
-        </div>  
-        <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="flex-container">
+            <a href="#main-content" id="skip-nav">Skip to content</a>
+            <div class="logo-name flex-container">
+                <a href="index.html"><img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo"></a>
+                <span class="name">Cozy Palms Cafe</span>
+            </div>  
+            <nav class="flex-container">
+                <ul class="nav-list flex-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main id="main-content">
-        <section class="landing">
-            <h1>Welcome to your cozy little hobbit hole in the tropics</h1>
-            <div class="menu-link">
-                <h2>Want to know what is on the menu?</h2>
-                <a href="menu.html" target="_blank">Click Here</a>
-            </div>
-        </section>
+    <div class="landing grid-container">
+        <h1>Welcome to your cozy little hobbit hole in the tropics</h1>
+        <div class="menu-link">
+            <h2>Want to know what is on the menu?</h2>
+            <a href="menu.html" target="_blank">Click Here</a>
+        </div>
+    </div>
 
+    <main id="main-content">
         <div class="flex-container">
-            <section class="schedule">
-                <section class="opening-hours">
-                    <h1>Opening Hours</h1>
+            <div class="schedule grid-container">
+                <div class="opening-hours">
+                    <h2>Opening Hours</h2>
                     <table class="opening-hours-table">
                         <tbody>
                                 <tr>
@@ -55,52 +60,53 @@
                                 </tr>
                         </tbody>
                     </table>
-                </section>
+                </div>
                 
-                <section class="reservation-action">
-                    <h1>Click here to make a reservation</h1>
-                    <div class="reservation-link"><a href="contact_us.html"><img src="images/glyphs/calendar_icon.svg" alt="resevation-link" srcset></a></div>
-                </section>
-            </section>
-            <section class="selling-points selling-point-1">
-                <h1>More than just a Cafe</h1>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;Cozy Palms Cafe is more than just a coffee shop. It’s a place where you can relax, unwind, and enjoy the island life. Whether you’re looking for a delicious breakfast, a refreshing smoothie, or a mouthwatering sandwich, we have something for everyone. Our menu features local ingredients, organic coffee, and vegan options. Our staff are friendly, helpful, and ready to make you feel at home. Come and experience the cozy, islander vibes at Cozy Palms Cafe today. You’ll be glad you did.</p>
+                <div class="reservation-action">
+                    <h2>Click here to make a reservation</h2>
+                    <div class="reservation-link"><a href="contact_us.html"><img src="images/glyphs/calendar_icon.svg" alt="resevation-link"></a></div>
+                </div>
+            </div>
+
+            <section class="selling-points selling-point-1 grid-container">
                 <img class="island-sunset" src="images/index/sunset.jpeg" alt="a sunset on an island">
+                <h2>More than just a Cafe</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Cozy Palms Cafe is more than just a coffee shop. It’s a place where you can relax, unwind, and enjoy the island life. Whether you’re looking for a delicious breakfast, a refreshing smoothie, or a mouthwatering sandwich, we have something for everyone. Our menu features local ingredients, organic coffee, and vegan options. Our staff are friendly, helpful, and ready to make you feel at home. Come and experience the cozy, islander vibes at Cozy Palms Cafe today. You’ll be glad you did.</p>
             </section>
 
-            <section class="selling-points selling-point-2">
-                <h1>The perfect place for evening work</h1>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;We have a cozy and quiet atmosphere, with free Wi-Fi and power outlets. You can enjoy our delicious coffee and snacks, and get discounts with your student ID. You can also meet other students and make new friends. The Cozy Palms Cafe is the best place to study at night in Saipan. Come and see for yourself!</p>
+            <section class="selling-points selling-point-2 grid-container">
                 <img class="night-work-img" src="images/index/night_work.png" alt="evening work at the Cozy Palms Cafe">
+                <h2>The perfect place for evening work</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;We have a cozy and quiet atmosphere, with free Wi-Fi and power outlets. You can enjoy our delicious coffee and snacks, and get discounts with your student ID. You can also meet other students and make new friends. The Cozy Palms Cafe is the best place to study at night in Saipan. Come and see for yourself!</p>
             </section>
         </div>
     </main>
     
     <footer>
-        <img src="images/logo/cozy_palms_cafe_banner.svg" alt="Cozy Palms Cafe Banner" class="banner">
+        <div class="flex-container">
+            <img src="images/logo/cozy_palms_cafe_banner.svg" alt="Cozy Palms Cafe Banner" class="banner">
 
-        <div class="quick-links">
-            <h1>Quick Links</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
-        </div>
-        
-        <div class="social-media">
-            <h2>Social Media</h2>
-            <ul>
-                <li><a href="#">Youtube</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">X</a></li>
-            </ul>
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="social-media">
+                <h2>Social Media</h2>
+                <ul>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                </ul>
+            </div>
         </div>
         <div class="copyright">Kristian Pestano &copy; 2023</div>
     </footer>
-
-    <button>Navigation</button>
 </body>
 </html>

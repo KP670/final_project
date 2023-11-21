@@ -13,13 +13,14 @@
     <link rel="shortcut icon" href="images/fav_icon/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header class="flex-container">
+        <a href="#main-content" id="skip-nav">Skip to content</a>
         <div class="logo-name">
-            <img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo">
+            <a href="index.html"><img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo"></a>
             <h1 class="name">Cozy Palms Cafe</h1>
         </div>  
         <nav>
-            <ul class="nav-list">
+            <ul class="nav-list flex-container">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="events.html">Events</a></li>
@@ -29,13 +30,16 @@
         </nav>
     </header>
 
-    <main>
-        <section class="landing">
+    <div class="landing">
+        <div class="landing-container">
             <h1 class="about-us-heading">About Us</h1>
             <blockquote class="mission-statement">At Cozy Palm Cafe, we are committed to providing our customers with a cozy and relaxing dining experience, where they can enjoy the best of Saipan’s cuisine and culture. We use fresh and local ingredients in our dishes, as well as organic and fair-trade coffee beans. We support local farmers and artisans by featuring their products in our menu and our gift shop. We also care about the community and the environment, and we participate in various charitable and sustainability initiatives. We strive to make Cozy Palm Cafe a place where people can feel at home and enjoy the tropical atmosphere of Saipan.</blockquote>
-        </section>
+        </div>
+    </div>
+
+    <main>
         <section class="who-we-are">
-            <h1>Who we are?</h1>
+            <h2>Who we are?</h2>
             <p>
                 We are a family-owned and operated cafe located in the beautiful island of Saipan. 
                 We offer a variety of delicious dishes, from breakfast to dinner, as well as coffee, tea, smoothies, and desserts. 
@@ -73,7 +77,5 @@
         </div>
         <div class="copyright">Kristian Pestano &copy; 2023</div>
     </footer>
-
-
 </body>
 </html>
