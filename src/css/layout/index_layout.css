@@ -27,12 +27,12 @@
 
 .landing h1 {
     grid-column: 1/-1;
-    width: 75%;
+    width: 20ch;
     
     margin: 2em auto auto 1em;
 
-    font-size: clamp(3em, 6em, 7em);
-
+    font-size: clamp(3em, 6em + 1vh, 10em);
+    /* font-size: 6em; */
 }
 
 .menu-link {
@@ -55,7 +55,7 @@
     padding: 1em .5em;
     
     border-radius: 1em;
-    font-size: 1.5em;
+    font-size: clamp(1em+1vw, 1.5em, );
 }
 
 /* Schedule-related*/
@@ -93,7 +93,6 @@
 
 /* selling-point-1 */
 .selling-points.grid-container {
-    display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
@@ -101,8 +100,8 @@
 }
 
 .selling-points {
-    height: 90vh;
-    height: 90svh;
+    height: 100vh;
+    height: 100svh;
     
     padding: 2em;
 }
@@ -157,30 +156,15 @@
 
 
 @media only screen and (max-width: 1440px) {
-    .landing h2 {
-        /* font-size: 5em; */
-    }
 
-    .menu-link h2 {
-        /* font-size: 2.5em; */
-    }
 }
 
 @media only screen and (max-width: 1366px) {
-    .landing h2 {
-        /* font-size: 4em; */
-    }
 
-    .menu-link h2 {
-        /* font-size: 2em; */
-    }
 }
-
 @media only screen and (max-width: 1220px) {
     .landing.grid-container {
         grid-template-columns: 1fr;
-        text-align: center;
-        
     }
 
     .landing h2 {        

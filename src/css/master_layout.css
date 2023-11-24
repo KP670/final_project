@@ -138,11 +138,13 @@ button {
 /* main */
 main .flex-container {
     flex-direction: column;
+    width: clamp(720px, 75%, 1920px);
+    margin: auto;
+
 }
 
 main {
-    width: 80%;
-    margin: auto;
+
     align-content: center;
 }
 
