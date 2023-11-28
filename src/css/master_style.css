@@ -58,7 +58,7 @@ span.name {
 
 
     /* nav style */
-.nav-list a {
+.desktop-nav .nav-list a {
     /* background-color:  var(--primary-col); */
     /* box-shadow: 4px 8px 4px var(--nav-shadow-color); */
     background-color: var(--primary-col);
@@ -84,6 +84,8 @@ span.name {
 .nav-list li:active {
     transform: translate(1px, 1px);
 }
+
+
 
 /* footer */
 footer {

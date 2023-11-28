@@ -44,7 +44,7 @@
 }
 
 .menu-link span {
-    font-size: clamp(1em, 1vw + 1em, 8em);
+    font-size: clamp(2em, 1vw + 2em, 16em);
 }
 
 .menu-link a {
@@ -54,42 +54,7 @@
     padding: 1em .5em;
     
     border-radius: 1em;
-    font-size: max(1.5em);
-}
-
-/* Schedule-related*/
-    /* Opening Hours */
-.schedule.flex-container{
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-basis: 1;
-}
-
-.schedule > .opening-hours h2,
-.schedule > .reservation-action h2 {
-    font-size: clamp(2em, 1vh + 2em, 16em);
-}
-
-.opening-hours-table {
-    width: 90%;
-    margin: auto;
-}
-
-
-.opening-hours h2 {
-    text-align: center;
-} 
-    /* Reservation */
-.reservation-action {
-    justify-content: center;
-}
-.reservation-action h2 {
-    text-align: center;
-}
-
-.reservation-link img {
-    display: block;
-    margin: auto;
+    font-size: clamp(1em, 1vw + 1em, 8em);
 }
 
 /* selling points */
@@ -127,9 +92,8 @@
 .selling-points img {
     margin: auto;
     grid-row: 2/-1;
-    justify-self: center;
-    vertical-align: middle;
-
+    justify-self: first baseline;
+    align-self: first baseline;
     width: 75%;
 }
 
@@ -156,6 +120,40 @@
 .night-work-img {
     grid-column: 2/-1;
 }
+
+/* Schedule-related*/
+    /* Opening Hours */
+    .schedule.flex-container{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .schedule > .opening-hours h2,
+    .schedule > .reservation-action h2 {
+        font-size: clamp(2em, 1vw + 2em, 16em);
+    }
+    
+    .opening-hours-table {
+        width: 90%;
+        margin: auto;
+    }
+    
+    
+    .opening-hours h2 {
+        text-align: center;
+    } 
+        /* Reservation */
+    .reservation-action {
+        justify-content: center;
+    }
+    .reservation-action h2 {
+        text-align: center;
+    }
+    
+    .reservation-link img {
+        display: block;
+        margin: auto;
+    }
 
 @media only screen and (max-width: 1440px) {
     .landing h1 {
@@ -191,8 +189,13 @@
     .selling-points h1 {
         justify-self: center;
     }
-}
 
+    .quick-links ul > li,
+    .social-media ul > li {
+        margin-bottom: 1em;
+    }
+
+}
 
 @media only screen and (max-width: 800px) {
     .landing h2 {
@@ -201,5 +204,9 @@
 
     .selling-points p {
         /* font-size: 0.5em; */
+    }
+
+    footer .flex-container {
+        justify-content: center;
     }
 }
