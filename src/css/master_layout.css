@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+/* Layout Variables */
+:root {
+    --full-viewport-height: max(100vw, 100%);
+}
 /* class-specific styling */
 
 /* Flex-Box */
@@ -41,7 +45,7 @@ header {
     pointer-events: auto;
     
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0px;
     
     z-index: 2;
@@ -101,13 +105,15 @@ nav.flex-container {
 
 /* footer layout */
 footer {
+    width: auto;
+    height: auto;
+
     padding: 16px;
 }
 
-footer > .flex-container {
-    justify-content: space-between;
-
-    width: 100%;
+footer .flex-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .banner {
@@ -136,39 +142,43 @@ button {
 }
 
 /* main */
-main .flex-container {
-    flex-direction: column;
-    width: clamp(720px, 75%, 1920px);
+main .grid-container {
+    width: 75%;
+    max-width: 1920px;
     margin: auto;
 
 }
 
+/* main layout */
 main {
-
     align-content: center;
 }
 
-@media only screen and (max-width: 875px) {
-    body {
-        width: 100%;
-        overflow-x: hidden;
+@media only screen and (max-width: 1280px) {
+    main .grid-container {
+        width: 90%;
     }
-    
-    header {
-        justify-content: center;
-    }
-    
-    header nav {
-        display: none;
-    }
+}
 
-    button {
-        display: block;
-    }
-
-    footer {
-        display: flex;
+@media only screen and (max-width: 900px) {
+    header .flex-container {
         flex-direction: column;
         justify-content: center;
     }
+    
+    .logo-name.flex-container {
+        flex-direction: row;
+    }
+
+    nav.flex-container {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    footer .flex-container {
+        width: 90%;
+    }   
 }
