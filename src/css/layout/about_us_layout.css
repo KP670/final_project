@@ -2,10 +2,17 @@
 
 .landing {
     height: 100vh;
-    height: 100svh;
+    min-height: 100svh;
 }
 
-.about-us-heading,
+.landing .flex-container {
+    padding: 5%;
+}
+.about-us h1 {
+    font-size: var(--h1-font-size);
+    width: auto;
+    padding: 1em;
+}
 .mission-statement {
     width: 80%;
     padding: 1em;
@@ -13,7 +20,7 @@
     font-size: 1.75em;
 }
 
-.about-us-heading {
+.about-us h1 {
     width: max-content;
     text-align: center;
 }
@@ -35,4 +42,11 @@
 }
 
 
-/*  */
+/* About Us Text */
+.who-we-are h2 {
+    font-size: var(--h2-font-size);
+}
+
+.who-we-are p {
+    font-size: var(--p-text-font-size);
+}

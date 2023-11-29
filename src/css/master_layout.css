@@ -2,7 +2,9 @@
 
 /* Layout Variables */
 :root {
-    --full-viewport-height: max(100vw, 100%);
+    --h1-font-size: clamp(4em, 1vw + 4em, 32em);
+    --h2-font-size: clamp(3em, 1vw + 3em, 24em);
+    --p-text-font-size: clamp(1em, 1vw + 1em, 8em);
 }
 /* class-specific styling */
 
@@ -162,7 +164,8 @@ button {
 }
 
 /* main */
-main .grid-container {
+main .grid-container,
+main .flex-container {
     width: 80%;
     margin: auto;
     padding: 4em 0
