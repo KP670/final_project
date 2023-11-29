@@ -210,14 +210,6 @@
         font-size: clamp(3em, 1vw + 3em, 24em);
     }
 
-    .landing h2 {
-
-    }
-
-    .selling-points p {
-        /* font-size: 0.5em; */
-    }
-
     footer .flex-container {
         justify-content: center;
     }

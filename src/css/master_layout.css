@@ -145,10 +145,6 @@ footer > .flex-container .social-media {
     padding: 1em
 }
 
-.links.flex-container {
-
-}
-
 .copyright {
     text-align: center;
 }
@@ -198,12 +194,6 @@ main {
         display: block;
     }
 
-}
-
-@media only screen and (max-width: 840px) {
-    footer img {
-        
-    }
 }
 
 @media only screen and (max-width: 800px) {

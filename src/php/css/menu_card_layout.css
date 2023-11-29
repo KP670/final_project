@@ -1,0 +1,15 @@
+.flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    border: 1px solid black;
+    width: 30%;
+    margin: auto 2em;
+}
+
+.menu-card img {
+    width: 25%;
+}
+

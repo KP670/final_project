@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+aside {
+    --secondary-col-partial-transparent: #fbea00;
+
+    background: linear-gradient(to right, var(--secondary-col), var(--secondary-col-partial-transparent), var(--secondary-col-transparent));
+    border-radius: 2em;
+}
+
+.menu-container {
+    border: none;
+}

@@ -3,9 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="css/master_layout.css">
+    <link rel="stylesheet" href="css/master_style.css">
+    <link rel="stylesheet" href="css/layout/menu_layout.css">
+    <link rel="stylesheet" href="css/style/menu_style.css">
 </head>
 <body>
-    <iframe src="php/database.php" frameborder="1"></iframe>
+    <header>
+        <div class="flex-container">
+            <a href="#main-content" id="skip-nav">Skip to content</a>
+            <div class="logo-name flex-container">
+                <a href="index.html"><img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo"></a>
+                <span class="name">Cozy Palms Cafe</span>
+            </div>  
+            <nav class="desktop-nav flex-container" aria-label="Desktop navigation">
+                <ul class="nav-list flex-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="grid-container">
+
+            <aside class="menu-filter">
+                <form action="" method="get">
+                    <input type="range" name="" id="">
+                    <input type="button" value="Search">
+                </form>
+            </aside>
+            
+            <iframe class="menu-container" src="php/menu.php"></iframe>
+        
+        </div>
+    </main>
+
+    <footer>
+        <div class="flex-container">
+
+            <img src="images/logo/cozy_palms_cafe_banner.svg" alt="Cozy Palms Cafe Banner" class="banner">
+            <div class="links flex-container">
+                <div class="quick-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="social-media">
+                    <h2>Social Media</h2>
+                    <ul>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">X</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Kristian Pestano &copy; 2023</div>
+    </footer>
+
+    <nav class="mobile-nav flex-container">
+        <ul class="nav-list flex-container">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
 </body>
 </html>

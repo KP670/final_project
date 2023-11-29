@@ -12,4 +12,3 @@
         die("Connection Error". $conn->connect_error);
     } 
 
-    echo "HELLO WORLD!";
