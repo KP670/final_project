@@ -49,7 +49,7 @@ header {
     position: fixed;
     width: 100vw;
     top: 0px;
-    
+    height: 10%;
     z-index: 2;
     
     padding: 10px 5px;    
@@ -81,7 +81,7 @@ nav.flex-container {
     /* nav list */
         /* desktop nav */
 .desktop-nav.nav-list.flex-container {
-    justify-content: flex-end;
+    justify-content: space-around;
 }
         /* mobile nav */
 .mobile-nav {
@@ -89,14 +89,6 @@ nav.flex-container {
     position: sticky;
     bottom: 0;
     justify-content: center;
-}
-
-.mobile-nav .nav-list {
-    justify-content: space-around;
-}
-
-.mobile-nav a {
-    font-size: max(1vw + 0.25em, .75em);
 }
 
 .nav-list {
@@ -119,7 +111,13 @@ nav.flex-container {
     transition: all;
 }
 
+.mobile-nav .nav-list {
+    justify-content: space-evenly;
+}
 
+.mobile-nav a {
+    font-size: max(1vw + 0.25em, .75em);
+}
 
 /* footer layout */
 footer {

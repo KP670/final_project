@@ -3,6 +3,8 @@
 .landing.grid-container{
     grid-template-columns: 1.25fr 1fr;
     grid-template-rows: 1.25fr 1fr;
+    width: 90%;
+    margin: auto;
 }
 
 .landing {
@@ -44,7 +46,7 @@
 }
 
 .menu-link span {
-    font-size: clamp(2em, 1vw + 2em, 16em);
+    font-size: clamp(1em, 1vw + 1em, 6em);
 }
 
 .menu-link a {
@@ -184,7 +186,10 @@
 }
 
 @media only screen and (max-width: 1024px) {
- 
+    .landing h1 {
+        font-size: clamp(3.5em, 1vw + 3.5em, 28em);
+        margin-top: 3em;
+    }
     
     .selling-points h1 {
         justify-self: center;
@@ -194,12 +199,19 @@
     .social-media ul > li {
         margin-bottom: 1em;
     }
+}
+
+@media only screen and (max-width: 900px) {
 
 }
 
 @media only screen and (max-width: 800px) {
+    .landing h1 {
+        font-size: clamp(3em, 1vw + 3em, 24em);
+    }
+
     .landing h2 {
-        /* font-size: 5em; */
+
     }
 
     .selling-points p {
