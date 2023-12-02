@@ -1,15 +1,28 @@
+@charset "utf-8";
+
+
 .flex-container {
+    flex: 1, 1, 1;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 2em;
 }
 
 .menu-card {
-    border: 1px solid black;
-    width: 30%;
-    margin: auto 2em;
+    width: clamp(128px, 20vw, 256px);
+    padding: 1em;
+    margin: auto;
 }
 
 .menu-card img {
-    width: 25%;
+    margin: auto;
+    width: 100%;
 }
 
+.menu-item-name {
+    font-size: clamp(1em, 1vw + 1.25em, 2em);
+}
+
+.menu-item-price {
+    font-size: clamp(1em, 1vw + 1.25em, 1.5em);
+}

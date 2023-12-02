@@ -2,15 +2,18 @@
 
 /* Layout Variables */
 :root {
-    --h1-font-size: clamp(4em, 1vw + 4em, 32em);
-    --h2-font-size: clamp(3em, 1vw + 3em, 24em);
-    --p-text-font-size: clamp(1em, 1vw + 1em, 8em);
+    --big-text-heading: clamp(4em, 1vw + 4em, 12em);
+    --medium-text-heading: clamp(3em, 1vw + 3em, 8em);
+    --small-text-heading: clamp(2em, 1vw + 2em, 6em);
+    
+    --large-text-font-size: clamp(1em, 1vw + 1em, 2em);
 }
 /* class-specific styling */
 
 /* Flex-Box */
 .flex-container {
     display: flex;
+    
 }
 
     /* Grid */
@@ -38,21 +41,21 @@ body {
 #skip-nav:focus { color: white;}
 
 /* header layout */
-
-header.flex-container {
-    align-items: center;
-}
-
 header {
+    position: fixed;
     pointer-events: auto;
     
-    position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0px;
-    height: 10%;
-    z-index: 2;
+    z-index: 10;
+    overflow: hidden;
+}
+
+header .flex-container {
+    justify-content: flex-end;
     
-    padding: 10px 5px;    
+    align-items: center;
+    margin: 0.25em 1em;
 }
 
 .logo-name.flex-container {
@@ -72,27 +75,8 @@ header {
 
 
 /* nav layout */
-nav.flex-container {
-    flex-grow: 5;
-    justify-content: flex-end;
-    align-items: center;
-}
-
     /* nav list */
-        /* desktop nav */
-.desktop-nav.nav-list.flex-container {
-    justify-content: space-around;
-}
-        /* mobile nav */
-.mobile-nav {
-    display: none;
-    position: sticky;
-    bottom: 0;
-    justify-content: center;
-}
-
 .nav-list {
-    margin: 0;
     padding: 1em;
     
     list-style: none;
@@ -100,7 +84,7 @@ nav.flex-container {
 
 .nav-list > li {
     padding: 0;
-
+    text-align: center;
 }
 
 .nav-list a {
@@ -111,12 +95,21 @@ nav.flex-container {
     transition: all;
 }
 
-.mobile-nav .nav-list {
+
+        /* desktop nav */
+#desktop-nav {
+    flex-grow: 1;
+    align-content: center;
+}
+#desktop-nav.nav-list.flex-container {
     justify-content: space-evenly;
 }
 
-.mobile-nav a {
-    font-size: max(1vw + 0.25em, .75em);
+/* default mobile nav */
+#mobile-nav {
+    inset: 100%;
+    position: absolute;
+    display: none;
 }
 
 /* footer layout */
@@ -124,12 +117,12 @@ footer {
     width: auto;
     height: auto;
 
-    padding: 16px;
+    /* padding: 16px; */
 }
 
 footer .flex-container {
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .banner {
@@ -149,20 +142,12 @@ footer > .flex-container .social-media {
     text-align: center;
 }
 
-button {
-    display: none;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    height: 5vh;
-}
-
 /* main */
 main .grid-container,
 main .flex-container {
     width: 80%;
     margin: auto;
-    padding: 4em 0
+    padding: 4em 0;
 }
 
 /* main layout */
@@ -170,14 +155,106 @@ main {
     align-content: center;
 }
 
+/* Script Classes */
+.hidden {
+    display: none;
+}
+
+#nav-button {
+    display: block;
+    bottom: 4px;
+
+    position: fixed;
+    z-index: 9999;
+
+    margin: auto;
+
+}
+
+
+/* Media Queries */
 @media only screen and (max-width: 1600px) {
     main .grid-container {
         width: 90%;
     }
 }
 
+@media only screen and (max-width:1024px) {
+    header {
+        position: static;
+
+        z-index: 1;
+    }
+
+    .logo-name.flex-container {
+        margin: auto;
+    }
+
+    .quick-links ul > li,
+    .social-media ul > li {
+        margin-bottom: 1em;
+    }
+
+    #desktop-nav {
+        display: none;
+    }
+
+            /* mobile nav */
+#mobile-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    
+    justify-content: center;
+    
+    z-index: 8;
+    margin: auto;
+    padding: 2em;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+#mobile-nav.flex-container{
+    flex-direction: column;
+}
+
+#mobile-nav ul.flex-container {
+    justify-content: space-evenly;
+}
+
+#mobile-nav .nav-list {
+    flex-direction: column;
+    margin: auto;
+    height: 50%;
+    width: 36%;
+    padding: 4em 2em;
+    justify-content: center;
+}
+
+#mobile-nav .nav-list li {
+    margin: 0.5em;
+    flex: 1;
+}
+
+#mobile-nav a {
+    font-size: var(--large-text-font-size);
+    width: 100%;
+}
+
+#mobile-nav img {
+    width: min(25vh ,128px);
+    padding: 1em;
+    margin: auto;
+}
+}
+
 @media only screen and (max-width: 900px) {
     header .flex-container {
+        position: static;
+        margin: auto;
+
         flex-direction: column;
         justify-content: center;
     }
@@ -186,18 +263,11 @@ main {
         flex-direction: row;
     }
 
-    .desktop-nav.flex-container {
-        display: none;
-    }
-
-    .mobile-nav {
-        display: block;
-    }
-
 }
 
 @media only screen and (max-width: 800px) {
     footer .flex-container {
         width: 90%;
+        margin: auto;
     }   
 }

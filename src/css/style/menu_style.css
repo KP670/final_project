@@ -1,12 +1,23 @@
 @charset "utf-8";
 
 aside {
-    --secondary-col-partial-transparent: #fbea00;
-
-    background: linear-gradient(to right, var(--secondary-col), var(--secondary-col-partial-transparent), var(--secondary-col-transparent));
+    --secondary-col-partial-transparent: #fbea004b;
+    --secondary-col: #fff67446;
+    background: linear-gradient(to right, var(--secondary-col), var(--secondary-col-transparent));
     border-radius: 2em;
+}
+aside {
+    margin: 1em;
+}
+
+form.flex-container {
+    flex-direction: column;
 }
 
 .menu-container {
+    background-color: rgba(255, 255, 255, 0.244);
+    border-radius: 2em;
     border: none;
+    box-shadow: 8px 6px 4px 8px  rgba(0, 0, 0, 0.506);
 }
+

@@ -37,8 +37,14 @@
 }
 
 /* open hours schedule */
+
+
 .schedule {
     margin: 0px;
+}
+
+.schedule span {
+    font-family: var(--heading-font);
 }
 
 .opening-hours h2,

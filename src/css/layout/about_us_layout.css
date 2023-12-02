@@ -1,52 +1,27 @@
 @charset "utf-8";
 
+header {
+    position: sticky;
+}
+
 .landing {
-    height: 100vh;
-    min-height: 100svh;
+    margin: auto;
+    width: 1024px;
+    flex-direction: column;
 }
-
-.landing .flex-container {
-    padding: 5%;
-}
-.about-us h1 {
-    font-size: var(--h1-font-size);
-    width: auto;
-    padding: 1em;
-}
-.mission-statement {
-    width: 80%;
-    padding: 1em;
-    margin:  1em auto;
-    font-size: 1.75em;
-}
-
-.about-us h1 {
+.landing h1 {
+    font-size: var(--big-text-heading);
     width: max-content;
+    padding: 0.5em;
+    margin: auto;
     text-align: center;
 }
 
-/* Mission Statement */
-.mission-statement::before,
-.mission-statement::after {
-    display: block;
-    font-size: 5em;
-}
-
-.mission-statement::before {
-    content: open-quote;
-}
-
-.mission-statement::after {
-    content: close-quote;
-    text-align: right;
-}
-
-
 /* About Us Text */
 .who-we-are h2 {
-    font-size: var(--h2-font-size);
+    font-size: var(--big-text-heading);
 }
 
 .who-we-are p {
-    font-size: var(--p-text-font-size);
+    font-size: var(--large-text-font-size);
 }

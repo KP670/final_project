@@ -1,3 +1,22 @@
-html {
+@import url(../../css/master_style.css);
+
+:root {
+    --doc-background-color: transparent;
+}
+
+html, body {
     background-color: transparent;
+}
+
+.menu-card {
+    background-color: white;
+}
+
+.menu-card,
+.menu-card img {
+    border-radius: 1em;
+}
+
+.menu-card span {
+    font-family: var(--heading-font);
 }

@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;600&display=swap');
 * {
     font-family: var(--large-text-font);
 }
@@ -9,10 +9,15 @@
 /* variables */
 :root {
     /* typography */
+        /* font-type */
     --logo-font: 'Playfair Display', serif;
     --large-text-font: 'Lexend', sans-serif;
+    --quote-font: 'Lexend', sans-serif;
+
     --heading-font: var(--logo-font);
 
+    /* fontweight */
+    --quote-font-weight: 600;
     /* color */
         
         /* background */
@@ -33,7 +38,7 @@
     --accent-col-transparent: #8bbaff88;
 
         /* shadow */
-    --nav-shadow-color: rgb(146, 71, 22);
+    --nav-shadow-color: rgba(146, 72, 22, 0.581);
     
         /* footer */
     --footer-link-font-color: rgb(211, 211, 211);
@@ -58,26 +63,32 @@ span.name {
 
 
     /* nav style */
-.desktop-nav .nav-list a {
-    /* background-color:  var(--primary-col); */
-    /* box-shadow: 4px 8px 4px var(--nav-shadow-color); */
+
+#desktop-nav .nav-list a,
+#mobile-nav .nav-list a {
+    --primary-col: #e8701a;
+    
+    color: white;
     background-color: var(--primary-col);
-    color: black;
+
+    border-radius: 8em;
+
     text-decoration: none;
     font-family: var(--large-text-font);
     text-align: center;
     transition-property: transform, color, box-shadow;
-    transition-duration: 0.25s;
-    box-shadow: 4px 4px 2px var(--nav-shadow-color);
+    transition-duration: 0.1s;
+    box-shadow: 3px 3px 2px  2px var(--nav-shadow-color);
 }
 
 .nav-list a:hover {
     background-color: var(--primary-col-desat);
+    color: black;
+
 }
 
 .nav-list a:active {
-    box-shadow: 3px 3px 2px var(--nav-shadow-color);
-
+    box-shadow: 1.5px 1.5px 2px var(--nav-shadow-color);
 }
 
 .nav-list a:active,
@@ -85,6 +96,24 @@ span.name {
     transform: translate(1px, 1px);
 }
 
+#mobile-nav {
+    background-color: rgba(0, 0, 0, 0.202);
+}
+
+#mobile-nav img {
+    background-color: rgba(255, 255, 255, 0.276);
+    border-radius: 50%;
+}
+
+#mobile-nav .nav-list {
+    background-color: var(--accent-col-desat);
+    border-radius: 4em;
+}
+
+#mobile-nav img,
+#mobile-nav .nav-list {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.345);
+}
 
 
 /* footer */
@@ -107,4 +136,13 @@ footer a {
 footer a {
     color: var(--footer-link-font-color);
     text-decoration: none;
+}
+
+/* Other Elements */
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+blockquote {
+    font-weight: var(--quote-font-weight);
 }

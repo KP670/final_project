@@ -34,8 +34,17 @@
         <div class="grid-container">
 
             <aside class="menu-filter">
-                <form action="" method="get">
-                    <input type="range" name="" id="">
+                <form class="flex-container" method="get">
+                    <fieldset>
+                        <label for="dish-name">Dish Name</label>
+                        <input type="text" name="dish_name" id="dish-name">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label for="price-range">Price Range</label>
+                        <input type="range" name="price" id="price-range" min="0" max="50">
+                    </fieldset>
+
                     <input type="button" value="Search">
                 </form>
             </aside>
