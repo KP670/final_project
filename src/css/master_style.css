@@ -15,7 +15,7 @@
     --heading-font: var(--logo-font);
 
     /* fontweight */
-    --quote-font-weight: 600;
+    --bold-font-weight: 600;
     /* color */
         
         /* background */
@@ -168,7 +168,7 @@ h1, h2 {
 }
 
 blockquote {
-    font-weight: var(--quote-font-weight);
+    font-weight: var(--bold-font-weight);
 }
 
 

@@ -56,26 +56,7 @@
     <main>
         <h1>Menu</h1>
         <div class="flex-container">
-
-            <aside class="menu-filter">
-                <form class="flex-container" method="get">
-                    <fieldset class="flex-container">
-                        <label for="dish-name">Dish Name</label>
-                        <input type="text" name="dish_name" id="dish-name">
-
-                        <label for="type-dish-selector">Select category</label>
-                        <select name="type" id="category-selector">
-                            <option value="dishes">Dishes</option>
-                            <option value="drinks">Drinks</option>
-                        </select>
-                    </fieldset>
-
-                    <input type="submit" value="Search">
-                </form>
-            </aside>
-            
-            <iframe class="menu-container" src="php/menu.php"></iframe>
-        
+            <iframe id="menu-container" src="php/menu.php"></iframe>
         </div>
     </main>
 

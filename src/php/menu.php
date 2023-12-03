@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <?php require '../db_config/database.php'?>
-<?php
-    $sql = "SELECT * FROM dishes";
-    if (empty($sql)) {
-       $sql = "SELECT * FROM dishes";
-    }
 
+<?php  
+ ;
+function process_sql() {
+    $query = "SELECT * FROM dishes";
+
+    if(isset($_POST['submit'])) {
+        $category = $_POST['category'];
+        $where_clause = 'WHERE category = ' . $category; 
+        return $query = 'SELECT * FROM dishes' . $where_clause;
+    } else {return $query;}
+}
+
+    $sql = process_sql();
+   
     $result = mysqli_query($conn, $sql);
     $menu_set = mysqli_fetch_all($result, MYSQLI_ASSOC);
 ?>
@@ -23,18 +32,18 @@
         <div class="flex-container">
 
             <?php foreach($menu_set as $menu_item): ?>
-                <?php $dish_img_path = "../menu_images/dishes/". $menu_item['dish_img'] ?>
+                <?php $dish_img_path = "../menu_images/menu/". $menu_item['menu_item_img'] ?>
                 <div class="menu-card">
-                <img src=<?php echo $dish_img_path ?> alt=<?php echo $menu_item['dish_name'] ?>>              
+                <img src=<?php echo $dish_img_path ?> alt="<?php echo $menu_item['menu_item_name'] ?>">              
                     <div class="menu-information">
 
                         <span class="menu-item-name">
-                            <?php echo $menu_item['dish_name'] ?>
+                            <?php echo $menu_item['menu_item_name'] ?>
                         </span>
                         
-                        <div class="menu-item-price">
-                            <?php echo "$" . $menu_item['dish_price'] ?>
-                        </div>
+                        <span class="menu-item-price">
+                            <?php echo "$" . $menu_item['menu_item_price'] ?>
+                        </span>
 
                     </div>
                 </div>
