@@ -115,6 +115,22 @@ span.name {
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.345);
 }
 
+#nav-button {
+    background-color: var(--primary-col);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#nav-button:hover {
+    background-color: var(--primary-col-desat);
+}
+
+#nav-button span {
+    display: block;
+    background-color: white;
+    height: 4px;
+    width: 100%;
+}
 
 /* footer */
 footer {

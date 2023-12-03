@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.landing h1 {
+h1 {
     font-family: var(--logo-font);
 
     border-radius: 1em;

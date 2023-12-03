@@ -1,12 +1,14 @@
 
-const visState = document.getElementsByClassName("hidden")[0];
+const visState = document.getElementById("mobile-nav");
 
-document.getElementById("nav-button").onclick = function () {
-    if (visState.style.display == "none") {
-        visState.style.display = "flex"
-    } else {
-        visState.style.display = "none"
-    }
+function __init__() {
+    document.getElementById("nav-button").onclick = function () {
+        if (visState.style.display == "none") {
+            visState.style.display = "flex";
+        } else {
+            visState.style.display = "none";
+        };
+    };
 }
 
-console.log(visState)
+__init__()

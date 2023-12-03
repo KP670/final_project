@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cozy Palms Cafe -- Home</title>
+    <title>Contact Us | Cozy Palms Cafe</title>
 
     <link rel="stylesheet" href="css/master_layout.css">
     <link rel="stylesheet" href="css/master_style.css">
@@ -13,43 +13,89 @@
     <link rel="shortcut icon" href="images/fav_icon/favicon.ico" type="image/x-icon">
 
     
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
         <div class="flex-container">
             <a href="#main-content" id="skip-nav">Skip to content</a>
+            
             <div class="logo-name flex-container">
-                <a href="index.html"><img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo"></a>
+                <a href="index.html" class="logo-img"><img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo"></a>
                 <span class="name">Cozy Palms Cafe</span>
             </div>  
-            <nav class="desktop-nav flex-container" aria-label="Desktop navigation">
+            
+            <nav id="desktop-nav" class="flex-container" aria-label="Desktop navigation">
                 <ul class="nav-list flex-container">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="about_us.html">About Us</a></li>
                     <li><a href="contact_us.html">Contact Us</a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
-    <div class="landing">
-    </div> 
+    <nav id="mobile-nav" class="flex-container hidden">
+        <img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo">
+        <ul class="nav-list flex-container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="nav-button" type="button">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+    </div>
+
+    <!-- <div class="landing">
+    </div>  -->
 
     <main>  
+        <h1>Contact Us</h1>
         <div class="flex-container">
-            <h1>Contact Us</h1>
 
-            <div class="contact-information">
+            <div class="contact-information card">
                 <h2>Contact Information</h2>
-                
+                <table class="contact-information-table">
+                    <tbody>
+                        <tr>
+                            <th>Phone Number</th>
+                            <td><a href="tel:+16700000000">+1 (670)&nbsp;000&dash;0000</a></td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td><a href="mailto:cafe.cozypalms@cp.com" target="_blank" rel="noopener noreferrer">cafe.cozypalms@cp.com</a></td>
+                        </tr>
+                        <tr>
+                            <th>Mailing Address</th>
+                            <td>1146 Beach Road, Garapan, Saipan, MP </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <div class="form-card">
-                <form action="" method="post" class="contact_email">
+            <div class="form-card card">
+                <h2>Send us and Email</h2>
+                <form action="php/email_message.php" method="post" class="contact_email flex-container">
+                   <fieldset>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" autocomplete="">
                     
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject">
+
+                        <label for="email_message">Message</label>
+                        <textarea name="email_message" id="email_message"></textarea>
+                    </fieldset>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
@@ -65,7 +111,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
-                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="about_us.html">About Us</a></li>
                         <li><a href="contact_us.html">Contact Us</a></li>
                     </ul>
@@ -83,15 +129,6 @@
         </div>
         <div class="copyright">Kristian Pestano &copy; 2023</div>
     </footer>
-
-    <nav class="mobile-nav flex-container">
-        <ul class="nav-list flex-container">
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about_us.html">About Us</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-        </ul>
-    </nav>
+    
 </body>
 </html>

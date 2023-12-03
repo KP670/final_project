@@ -1,0 +1,67 @@
+header {
+    position: sticky;
+    top: 0;
+}
+
+main .flex-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2em auto;
+    gap: 4em;
+    flex: 1;
+}
+
+.card {
+    padding: 1em;
+}
+
+h1 {
+    font-size: var(--big-text-heading);
+    width: max-content;
+    padding: 0.5em;
+    margin: auto;
+    text-align: center;
+}
+
+table.contact-information-table {
+    display: block;
+    border-collapse: collapse;
+    border: 1px white solid;
+}
+
+table tr a {
+    color: black;
+    text-decoration: none;
+}
+
+table tr a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+table th{
+    text-align: left;
+    width: 50%;
+}
+
+
+
+.contact_email.flex-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1em;
+}
+
+.contact_email input{
+    display: block;
+}
+
+.contact_email button[type="submit"] {
+    height: 4em;
+
+    font-size: 1.25em;
+}
+
+.contact_email {
+
+}

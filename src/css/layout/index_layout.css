@@ -118,7 +118,7 @@
     grid-row: 1/2;
     grid-column: 1/-1;
     align-self: end;
-  margin-bottom: 0;
+    margin-bottom: 0;
 
 
     font-size: var(--medium-text-heading);
@@ -163,46 +163,46 @@
 
 /* Schedule-related*/
     /* Opening Hours */
-    .schedule span {
-        display: block;
-        text-align: center;
-        font-size: clamp(4em, 1vw + 4em, 32em);
-    }
+.schedule span {
+    display: block;
+    text-align: center;
+    font-size: clamp(4em, 1vw + 4em, 32em);
+}
 
-    .schedule .flex-container{
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    
-    .opening-hours h2,
-    .reservation-action h2 {
-        font-size: clamp(1.25em, 1vw + 1.25em, 4em);
-    }
-    
-    .opening-hours-table {
-        width: 90%;
-        margin: auto;
-        font-size: var(--large-text-font-size);
-    }
-    
-    
-    .opening-hours h2 {
-        text-align: center;
-    } 
+.schedule .flex-container{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2em auto;
+}
 
-        /* Reservation */
-    .reservation-action {
-        justify-content: center;
-    }
-    .reservation-action h2 {
-        text-align: center;
-    }
-    
-    .reservation-link img {
-        display: block;
-        margin: auto;
-    }
+.opening-hours h2,
+.reservation-action h2 {
+    font-size: clamp(1.25em, 1vw + 1.25em, 4em);
+}
 
+.opening-hours-table {
+    width: 90%;
+    margin: auto;
+    font-size: var(--large-text-font-size);
+}
+
+
+.opening-hours h2 {
+    text-align: center;
+} 
+
+    /* Reservation */
+.reservation-action {
+    justify-content: center;
+}
+.reservation-action h2 {
+    text-align: center;
+}
+
+.reservation-link img {
+    display: block;
+    margin: auto;
+}
 
     /* Media Queries */
 @media only screen and (max-width: 1440px) {

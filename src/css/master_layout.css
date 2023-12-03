@@ -108,6 +108,7 @@ header .flex-container {
 /* default mobile nav */
 #mobile-nav {
     inset: 100%;
+    margin: auto;
     position: absolute;
     display: none;
 }
@@ -140,14 +141,13 @@ footer > .flex-container .social-media {
 
 .copyright {
     text-align: center;
+    padding: 1em;
 }
 
 /* main */
-main .grid-container,
-main .flex-container {
+main {
     width: 80%;
     margin: auto;
-    padding: 4em 0;
 }
 
 /* main layout */
@@ -161,21 +161,28 @@ main {
 }
 
 #nav-button {
-    display: block;
+    display: none;
     bottom: 4px;
 
     position: fixed;
     z-index: 9999;
 
     margin: auto;
+    padding: 1em;
 
+    width: 4em;
+    height: 4em;
 }
 
+#nav-button span {
+    margin-bottom: 2px;
+}
 
 /* Media Queries */
 @media only screen and (max-width: 1600px) {
-    main .grid-container {
-        width: 90%;
+    main {
+        width: 85%;
+        margin: auto;
     }
 }
 
@@ -200,54 +207,59 @@ main {
     }
 
             /* mobile nav */
-#mobile-nav {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    
-    justify-content: center;
-    
-    z-index: 8;
-    margin: auto;
-    padding: 2em;
-    justify-content: flex-end;
-    overflow: hidden;
-}
+    #mobile-nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        
+        justify-content: center;
+        
+        z-index: 8;
+        margin: auto;
+        padding: 2em;
+        justify-content: flex-end;
+        overflow: hidden;
+    }
 
-#mobile-nav.flex-container{
-    flex-direction: column;
-}
+    #mobile-nav.flex-container{
+        flex-direction: column;
+    }
 
-#mobile-nav ul.flex-container {
-    justify-content: space-evenly;
-}
+    #mobile-nav ul.flex-container {
+        justify-content: space-evenly;
+    }
 
-#mobile-nav .nav-list {
-    flex-direction: column;
-    margin: auto;
-    height: 50%;
-    width: 36%;
-    padding: 4em 2em;
-    justify-content: center;
-}
+    #mobile-nav .nav-list {
+        flex-direction: column;
+        margin: auto;
+        height: 50%;
+        width: 50% ;
+        padding: 4em 2em;
+        justify-content: center;
+    }
 
-#mobile-nav .nav-list li {
-    margin: 0.5em;
-    flex: 1;
-}
+    #mobile-nav .nav-list li {
+        margin: 0.5em;
+        flex: 1;
+    }
 
-#mobile-nav a {
-    font-size: var(--large-text-font-size);
-    width: 100%;
-}
+    #mobile-nav a {
+        font-size: var(--large-text-font-size);
+        width: 100%;
+        white-space: nowrap;
+    }
 
-#mobile-nav img {
-    width: min(25vh ,128px);
-    padding: 1em;
-    margin: auto;
-}
+    #mobile-nav img {
+        width: min(25vh ,128px);
+        padding: 1em;
+        margin: auto;
+    }
+
+    #nav-button {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 900px) {
