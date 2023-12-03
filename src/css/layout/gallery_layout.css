@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+table {
+    border: 1px solid black;
+
+}
