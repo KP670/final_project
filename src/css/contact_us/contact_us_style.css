@@ -1,13 +1,7 @@
 @charset "utf-8";
 
 h1 {
-    font-family: var(--logo-font);
-
     border-radius: 1em;
     background-color: rgba(255, 255, 255, 0.401);
     box-shadow:  5px 5px 10px rgb(49, 49, 49);
-}
-
-.who-we-are h2 {
-    font-family: var(--logo-font);
 }

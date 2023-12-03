@@ -7,8 +7,8 @@
 
     <link rel="stylesheet" href="css/master_layout.css">
     <link rel="stylesheet" href="css/master_style.css">
-    <link rel="stylesheet" href="css/layout/menu_layout.css">
-    <link rel="stylesheet" href="css/style/menu_style.css">
+    <link rel="stylesheet" href="css/menu/menu_layout.css">
+    <link rel="stylesheet" href="css/menu/menu_style.css">
 
     <link rel="shortcut icon" href="images/fav_icon/favicon.ico" type="image/x-icon">
     <script src="js/main.js" defer></script>
@@ -55,21 +55,22 @@
     
     <main>
         <h1>Menu</h1>
-        <div class="grid-container">
+        <div class="flex-container">
 
             <aside class="menu-filter">
                 <form class="flex-container" method="get">
-                    <fieldset>
+                    <fieldset class="flex-container">
                         <label for="dish-name">Dish Name</label>
                         <input type="text" name="dish_name" id="dish-name">
-                    </fieldset>
-                    
-                    <fieldset>
-                        <label for="price-range">Price Range</label>
-                        <input type="range" name="price" id="price-range" min="0" max="50">
+
+                        <label for="type-dish-selector">Select category</label>
+                        <select name="type" id="category-selector">
+                            <option value="dishes">Dishes</option>
+                            <option value="drinks">Drinks</option>
+                        </select>
                     </fieldset>
 
-                    <input type="button" value="Search">
+                    <input type="submit" value="Search">
                 </form>
             </aside>
             

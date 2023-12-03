@@ -1,14 +1,10 @@
+const mobileNav = document.getElementById("mobile-nav");
+const navBtn = document.getElementById("nav-button");
 
-const visState = document.getElementById("mobile-nav");
-
-function __init__() {
-    document.getElementById("nav-button").onclick = function () {
-        if (visState.style.display == "none") {
-            visState.style.display = "flex";
-        } else {
-            visState.style.display = "none";
-        };
-    };
+navBtn.onclick = function () {
+    if(mobileNav.style.height == "0%") {
+        mobileNav.style.height = "100%";
+    } else {
+        mobileNav.style.height = "0%";
+    }
 }
-
-__init__()

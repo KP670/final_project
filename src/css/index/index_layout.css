@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-
-
 .landing {
     height: 100vh;
     height: 100svh;
@@ -18,11 +16,12 @@
 }
 
 .landing h1 {
+    margin: inherit;
     grid-column: 1/-1;
     width: 20ch;
     height: min-content;
     font-size: var(--big-text-heading);
-    /* margin-left: 0; */
+    margin-left: 0;
     margin-top: 2em;
 }
 
@@ -169,6 +168,10 @@
     font-size: clamp(4em, 1vw + 4em, 32em);
 }
 
+.schedule .container {
+    overflow-x: auto;
+}
+
 .schedule .flex-container{
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -177,13 +180,17 @@
 
 .opening-hours h2,
 .reservation-action h2 {
-    font-size: clamp(1.25em, 1vw + 1.25em, 4em);
+    font-size: var(--small-text-heading);
 }
 
 .opening-hours-table {
-    width: 90%;
     margin: auto;
-    font-size: var(--large-text-font-size);
+    font-size: var(--medium-text-font-size);    
+}
+
+.schedule table td,
+.schedule table th {
+    padding: 0.75em;
 }
 
 
@@ -225,13 +232,7 @@
 
     .landing h2 {        
         margin: auto;
-
-        /* font-size: 4em; */
     } 
-
-    /* .selling-points {
-        font-size: 0.75em;
-    } */
 }
 
 @media only screen and (max-width: 1024px) {
@@ -273,16 +274,31 @@
         font-size: clamp(1em, 1vw + 1em, 2em);
     }
     
-
+    .opening-hours-table {
+        font-size: var(--small-text-font-size);
+    }
 }
 
-@media only screen and (max-width: 960px) {
-    .landing h1 {
+@media only screen and (max-width: 900px) {
+    .container {
+        max-width: 540px;
     }
 }
 
 @media only screen and (max-width: 800px) {
     .landing.grid-container h1 {
         font-size: clamp(3em, 1vw + 2em, 2em);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 360px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 256px;
     }
 }
