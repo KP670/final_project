@@ -5,3 +5,25 @@ h1 {
     background-color: rgba(255, 255, 255, 0.401);
     box-shadow:  5px 5px 10px rgb(49, 49, 49);
 }
+
+table tr a {
+    color: black;
+    text-decoration: none;
+}
+
+table tr a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+fieldset,
+table {
+    border-radius: 1em;
+    border: 1px solid black;
+}
+
+legend {
+    background-color: var(--accent-col);
+    border-radius: 1em;
+    box-shadow: var(--global-box-shadow);
+}

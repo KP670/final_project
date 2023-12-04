@@ -5,7 +5,14 @@ header {
     top: 0;
 }
 
-table {
-    border: 1px solid black;
+main .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em;
+}
 
+main .grid-container img {
+    width: 75%;
+    justify-self: center;
 }

@@ -179,3 +179,9 @@ blockquote {
 
     box-shadow: var(--global-box-shadow);
 }
+
+.inner-card {
+    border-radius: 1em;
+    background-color: var(--secondary-col-transparent);
+    box-shadow: var(--global-box-shadow);
+}
