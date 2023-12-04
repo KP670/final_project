@@ -29,16 +29,19 @@ legend {
 }
 
 input[type='submit'] {
-    background-color: var(--secondary-col);
+    background-color: var(--primary-col);
     border: none;
     border-radius: 1em;
     box-shadow: var(--global-box-shadow);
     transition: all;
     transition-duration: 0.25s;
+    color: white;
+    font-weight: var(--bold-font-weight);
 }
 
 input[type='submit']:hover {
     background-color: var(--accent-col);
+    color: black;
     cursor: pointer;
 }
 
