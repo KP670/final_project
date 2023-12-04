@@ -61,9 +61,23 @@ table th{
 .contact_email button[type="submit"] {
     height: 4em;
 
-    font-size: 1.25em;
+    font-size: var(--);
 }
 
-.contact_email {
+.reservation_form .flex-container {
+    gap: 0.5em;
+    justify-content: flex-start;
 
+}
+
+.reservation_form fieldset label {
+    width: 100%;
+}
+
+.reservation_form fieldset input {
+    width: 100%;
+}
+
+.reservation_form input[type="submit"] {
+    width: 80%;
 }

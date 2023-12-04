@@ -63,7 +63,7 @@
     <!-- <div class="landing">
     </div>  -->
 
-    <main>  
+    <main class="main-">  
         <h1>Contact Us</h1>
         <div class="flex-container">
 
@@ -103,6 +103,48 @@
                     <button type="submit">Submit</button>
                 </form>
             </div>
+
+            <div class="reservation-card card">
+                <h2>Set up a reservation</h2>
+                <form action="php/email_message.php" method="post" class="reservation_form flex-container">
+                   <fieldset class="flex-container">
+                    
+                        <legend>Name Information</legend>
+
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first_name" id="first-name" autocomplete="">
+                    
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name">
+                    
+                    </fieldset>
+
+                    <fieldset class="flex-container">
+                        <legend>Contact Information</legend>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+
+                        <label for="phone-number">Phone Number</label>
+                        <input type="text" name="phone_number" id="phone-number">
+                    </fieldset>
+
+                    <fieldset class="flex-container">
+                        <legend>Event Details</legend>
+                        <select name="event_type" id="">
+                            <option value="">Select Event</option>
+                            <option value="birthday">Birthday Party</option>
+                            <option value="study_session">Study Session</option>
+                            <option value="business_meeting">Business Meeting</option>
+                        </select>
+                        <input type="datetime-local" name="event_date" id="event-date">
+                    </fieldset>
+
+                    <button type="submit">Submit</button>
+                    
+                </form>
+            </div>
+
         </div>
     </main>
 

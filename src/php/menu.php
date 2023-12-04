@@ -40,7 +40,7 @@ function process_sql() {
                         <span class="menu-item-name">
                             <?php echo $menu_item['menu_item_name'] ?>
                         </span>
-                        
+                        <br>
                         <span class="menu-item-price">
                             <?php echo "$" . $menu_item['menu_item_price'] ?>
                         </span>
