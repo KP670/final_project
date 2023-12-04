@@ -27,3 +27,23 @@ legend {
     border-radius: 1em;
     box-shadow: var(--global-box-shadow);
 }
+
+input[type='submit'] {
+    background-color: var(--secondary-col);
+    border: none;
+    border-radius: 1em;
+    box-shadow: var(--global-box-shadow);
+    transition: all;
+    transition-duration: 0.25s;
+}
+
+input[type='submit']:hover {
+    background-color: var(--accent-col);
+    cursor: pointer;
+}
+
+input[type='submit']:active {
+    background-color: var(--accent-col-desat);
+    box-shadow: 4px 4px 2px var(--nav-shadow-color);
+    transform: translate(1px, 1px) scale(0.95);
+}

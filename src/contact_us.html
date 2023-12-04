@@ -54,16 +54,7 @@
         
     </nav>
 
-    <div id="nav-button" class="nav-open" type="button">
-        <span class="bar1"></span>
-        <span class="bar2"></span>
-        <span class="bar3"></span>
-    </div>
-
-    <!-- <div class="landing">
-    </div>  -->
-
-    <main class="main-content">  
+    <main id="main-content">  
         <h1>Contact Us</h1>
         <div class="flex-container">
 
@@ -89,7 +80,7 @@
 
             <div class="form-card card">
                 <h2>Send us an email</h2>
-                <form action="php/email_message.php" method="post" id="contact_email" class="flex-container">
+                <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" id="contact_email" class="flex-container" target="form_results">
                    <fieldset class="inner-card">
                         <label for="email">Email</label><br>
                         <input type="email" name="email" id="email" autocomplete="">
@@ -106,7 +97,7 @@
 
             <div class="reservation-card card">
                 <h2>Set up a reservation</h2>
-                <form action="php/process_reservation.php" method="post" id="reservation-form" class="flex-container">
+                <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" target="form_results" id="reservation-form" class="flex-container">
                    
                     <div class="flex-container">
                         <fieldset class="inner-card">
@@ -128,14 +119,14 @@
                             <input type="email" name="email" id="email">
                             <br>
                             <label for="phone-number">Phone Number</label><br>
-                            <input type="text" name="phone_number" id="phone-number" pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$">
+                            <input type="text" name="phone_number" id="phone-number" pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$" placeholder="+1(000) 000-0000">
                         </fieldset>
     
                         <fieldset class="inner-card">
                             <legend>Event Details</legend>
 
                             <label for="event-type">Event</label><br>
-                            <select name="event_type" id="event-type"><br>
+                            <select name="event_type" id="event-type" required><br>
                                 <option value="">Select Event</option>
                                 <option value="birthday">Birthday Party</option>
                                 <option value="study_session">Study Session</option>
@@ -143,7 +134,7 @@
                             </select>
                             <br>
                         <label for="event-date">Date of event</label>
-                            <input type="datetime-local" name="event_date" id="event-date">
+                            <input type="datetime-local" name="event_date" id="event-date" required>
                         </fieldset>
                     </div>
 
@@ -153,6 +144,7 @@
             </div>
 
         </div>
+        <iframe name="form_results" id="form-results" class="card"></iframe>
     </main>
 
     <footer>
@@ -174,15 +166,25 @@
                 <div class="social-media">
                     <h2>Social Media</h2>
                     <ul>
-                        <li><a href="#">Youtube</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">X</a></li>
+                        <li><a href="https://www.youtube.com/@kristiankurtpestano9826" target="_blank">Youtube</a></li>
+                        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/KristianKurtDP1a" target="_blank">X</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="copyright">Kristian Pestano &copy; 2023</div>
+        <div class="notice">
+            <p>Cozy Palms Cafe is not a real place, this is a project for a course in Northern Marianas College, CS222 <em>(Web Design and Programming)</em>, taught by Mr. Micheal Rodgers, circa 2023.</p>
+            <p>I do not own any of these images, or they are AI generated</p>
+        </div>
     </footer>
-    
+
+    <div id="nav-button">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div> 
+    </div>
+
 </body>
 </html>

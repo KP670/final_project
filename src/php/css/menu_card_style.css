@@ -6,11 +6,14 @@
 
 html, body {
     background-color: transparent;
+    padding-top: 20vh;
 }
 
 .inner-card,
 .inner-card img {
     border-radius: 1em;
+    transition: all;
+    transition-duration: 0.5s;
 }
 
 .inner-card img {
@@ -19,4 +22,9 @@ html, body {
 }
 .menu-item-name {
     font-weight: var(--bold-font-weight);
+}
+
+.inner-card:hover {
+    background-color: var(--secondary-col-desat);
+    transform: scale(1.25);
 }

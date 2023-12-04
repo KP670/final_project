@@ -245,7 +245,8 @@ main > .flex-container {
 .focus-mode iframe {
     width: 50%;
     aspect-ratio: 16 / 9;
-    margin: auto;
+    margin: 2em auto;
+
 }
 
     /* Media Queries */

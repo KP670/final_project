@@ -120,7 +120,7 @@ footer {
     width: auto;
     height: auto;
 
-    /* padding: 16px; */
+    padding-bottom: 8em;
 }
 
 footer .flex-container {
@@ -144,6 +144,14 @@ footer > .flex-container .social-media {
 .copyright {
     text-align: center;
     padding: 1em;
+}
+
+.notice {
+    text-align: center;
+}
+
+.notice p {
+    margin: 0;
 }
 
 /* main */

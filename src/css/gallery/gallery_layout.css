@@ -10,14 +10,24 @@ main .grid-container {
     flex-wrap: wrap;
     gap: 2em;
     padding: 2em;
+    margin: 2em;
 }
 
 main .grid-container img {
     width: 75%;
     max-width: 1024px;
     justify-self: center;
+    aspect-ratio: 1/1;
 }
 
-@media screen {
-    
+@media only screen and (max-width: 1024px) {
+    main .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    main .grid-container {
+        grid-template-columns: 1fr;
+    }
 }

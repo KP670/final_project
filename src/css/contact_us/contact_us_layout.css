@@ -48,6 +48,10 @@ fieldset {
     font-size: var(--medium-text-font-size);
 }
 
+input[type="submit"] {
+    font-size: var(--medium-text-font-size);
+}
+
 #contact_email.flex-container {
     flex-direction: column;
     justify-content: flex-start;
@@ -97,6 +101,12 @@ fieldset {
 
 legend {
     padding: 0.5em;
+}
+
+/* iframe */
+#form-results {
+    width: 100%;
+    margin: auto;
 }
 
 @media only screen and (max-width:1024px) {
