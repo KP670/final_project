@@ -13,10 +13,42 @@ h1 {
 }
 
 /* About Us Text */
+.who-we-are {
+    padding: 2em;
+    margin: 2em auto;
+}
+
+
 .who-we-are h2 {
-    font-size: var(--big-text-heading);
+    font-size: var(--medium-text-heading);
+    padding: 0.5em;
 }
 
 .who-we-are p {
     font-size: var(--large-text-font-size);
+    width: 80%;
+    margin: auto;
+}
+
+.who-we-are hr {
+    width: 50%;
+    margin: 2em auto;
+}
+
+.who-we-are p::first-letter {
+    font-size: 2.5em;
+    padding-top: 0.1em;
+    float: left;
+
+}
+
+@media only screen and (max-width: 720px) {
+    h1 {
+        font-size: var(--small-text-heading);
+    }
+
+    .who-we-are h2 {
+        font-size: var(--small-text-heading);
+        text-align: center;
+    }
 }

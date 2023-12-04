@@ -8,18 +8,15 @@ html, body {
     background-color: transparent;
 }
 
-.menu-card {
-    background-color: white;
-    box-shadow: 4px 4px 16px 8px rgba(0, 0, 0, 0.37);
-}
-
-.menu-card .menu-item-name {
-    font-weight: var(--bold-font-weight);
-}
-
-.menu-card,
-.menu-card img {
+.inner-card,
+.inner-card img {
     border-radius: 1em;
 }
 
-
+.inner-card img {
+    width: 100%;
+    margin: auto;
+}
+.menu-item-name {
+    font-weight: var(--bold-font-weight);
+}

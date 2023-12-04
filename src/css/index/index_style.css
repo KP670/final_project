@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+.card {
+    border-radius: 2em;
+}
+
+
 .landing {
     --text-color: #202020;
 
@@ -36,6 +41,19 @@
     transform: translate(1px, 1px);
 }
 
+/* selling-point-1 */
+.selling-points h2 {
+    font-family: var(--heading-font);
+}
+
+.selling-points img {
+    outline: 16px ridge white ;
+}
+
+.night-work-img {
+    outline: 16px ridge white ;
+}
+
 /* open hours schedule */
 
 
@@ -61,17 +79,4 @@
 .schedule table td,
 .schedule table th {
     border: 1px solid #202020;
-}
-
-/* selling-point-1 */
-.selling-points h2 {
-    font-family: var(--heading-font);
-}
-
-.selling-points img {
-    outline: 16px ridge white ;
-}
-
-.night-work-img {
-    outline: 16px ridge white ;
 }

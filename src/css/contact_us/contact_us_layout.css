@@ -41,7 +41,7 @@ table th{
 
 table th,
 table td {
-    padding: 2em;
+    padding: 1em;
 }
 
 fieldset {
@@ -104,11 +104,20 @@ legend {
         flex-direction: column;
     }
 
-    #form-card {
-        height: 100%;
+    table th,
+    table td {
+        padding: 0.5em;
     }
 
-    .reservation-card h2 {
+    #form-card {
+        height: 100%;
+        max-width: min-content;
+        padding: 0;
+    }
+
+
+
+    .form-card h2 {
         text-align: center;
     }
 

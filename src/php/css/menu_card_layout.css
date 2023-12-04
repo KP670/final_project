@@ -1,23 +1,23 @@
 @charset "utf-8";
 
 
-.flex-container {
-    flex: 1, 1, 1;
-    flex-direction: row;
-    flex-wrap: wrap;
+.grid-container {
+    grid-template-columns: repeat(3, 1fr);
     gap: 2em;
     padding: 2em;
+    width: 80%;
+    margin: auto;
+
 }
 
-.menu-card {
-    width: clamp(128px, 20vw, 256px);
+.inner-card {
     padding: 1em;
     margin: auto;
 }
 
-.menu-card img {
+.inner-card img {
     margin: auto;
-    width: 100%;
+    width: 50%;
 }
 
 .menu-item-name {
@@ -25,5 +25,17 @@
 }
 
 .menu-item-price {
-    font-size: var(--medium-text-font-size);
+    font-size: var(--large-text-font-size);
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }

@@ -12,8 +12,6 @@
     --large-text-font: 'Lexend', sans-serif;
     --quote-font: 'Lexend', sans-serif;
 
-    --heading-font: var(--logo-font);
-
     /* fontweight */
     --bold-font-weight: 600;
     /* color */
@@ -120,19 +118,20 @@ nav a {
     background-color: var(--primary-col);
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: var(--global-box-shadow);
 }
 
-#nav-open:hover {
+#nav-button:hover {
+    background-color: var(--accent-col);
+}
+
+#nav-button.opened {
     background-color: var(--primary-col-desat);
 }
 
-#nav-open span {
-    display: block;
+#nav-button .bar {
     background-color: white;
-    height: 4px;
-    width: 100%;
 }
-
 
 /* footer */
 footer {
@@ -170,7 +169,6 @@ h1, h2 {
 blockquote {
     font-weight: var(--bold-font-weight);
 }
-
 
 /* Utility */
 .card {

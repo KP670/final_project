@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+main > .flex-container {
+    flex-direction: column;
+    gap: 2em;
+    padding: 10em auto;
+    margin: 2em auto;
+}
+
 .landing {
     height: 100vh;
     height: 100svh;
@@ -41,6 +48,10 @@
     opacity: 25%;
 }
 
+.landing, .landing::before {
+    min-height: 890px;
+}
+
 .menu-link {
     grid-row: 2/3;
     
@@ -64,7 +75,7 @@
     padding: 1em .5em;
     
     border-radius: 1em;
-    font-size: clamp(.75em, 1vw + 1em, 4em);
+    font-size: clamp(0.5em, 2vw + 1em, 2em);
 }
 
 /* Blockquote */
@@ -107,7 +118,7 @@
 .selling-points {
     padding: max(10px, 1em);
     height: 100vh;
-    margin-bottom: 1em;
+    min-height: 960px;
 }
 
 .selling-points .grid-container {
@@ -118,10 +129,9 @@
     grid-row: 1/2;
     grid-column: 1/-1;
     align-self: end;
-    margin-bottom: 0;
-
 
     font-size: var(--medium-text-heading);
+    padding: 0px 1ch;
 }
 
 .selling-points p {
@@ -129,6 +139,7 @@
     align-self: start;
 
     font-size: clamp(1em, 1vw + 1em, 8em);
+    padding: 1ch;
 }
 
 .selling-points img {
@@ -167,6 +178,8 @@
     display: block;
     text-align: center;
     font-size: clamp(4em, 1vw + 4em, 32em);
+    font-weight: var(--bold-font-weight);
+    padding: 0.5em;
 }
 
 .schedule .container {
@@ -191,6 +204,7 @@
 
 .schedule table td,
 .schedule table th {
+    text-align: center;
     padding: 0.75em;
 }
 
@@ -212,6 +226,28 @@
     margin: auto;
 }
 
+/* Music Section */
+.focus-mode .flex-container {
+    flex-direction: column;
+    padding: 1em;
+}
+
+.focus-mode  h2 {
+    text-align: center;
+    font-size: var(--medium-text-heading);
+}
+
+.focus-mode p {
+    text-align: center;
+    font-size: var(--large-text-font-size);
+}
+
+.focus-mode iframe {
+    width: 50%;
+    aspect-ratio: 16 / 9;
+    margin: auto;
+}
+
     /* Media Queries */
 @media only screen and (max-width: 1440px) {
     .landing h1 {
@@ -223,17 +259,22 @@
 @media only screen and (max-width: 1280px) {
     .landing .grid-container {
         grid-template-columns: 1fr;
+        justify-content: first baseline;
+        margin-top: 2em;
     }
 
     .landing h1 {
         font-size: clamp(3.5em, 1vw + 3.5em, 4.50em);
-
         text-align: center;
     }
 
     .landing h2 {        
         margin: auto;
     } 
+}
+
+@media only screen and (max-width: 1150px) {
+    
 }
 
 @media only screen and (max-width: 1024px) {
@@ -287,7 +328,7 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .landing.grid-container h1 {
+    .landing .grid-container h1 {
         font-size: clamp(3em, 1vw + 2em, 2em);
     }
 }

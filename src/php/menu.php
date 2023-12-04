@@ -29,11 +29,11 @@ function process_sql() {
 </head>
 <body>
     <main>
-        <div class="flex-container">
+        <div class="grid-container">
 
             <?php foreach($menu_set as $menu_item): ?>
                 <?php $dish_img_path = "../menu_images/menu/". $menu_item['menu_item_img'] ?>
-                <div class="menu-card">
+                <div class="inner-card">
                 <img src=<?php echo $dish_img_path ?> alt="<?php echo $menu_item['menu_item_name'] ?>">              
                     <div class="menu-information">
 
