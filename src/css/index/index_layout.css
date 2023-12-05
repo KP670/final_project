@@ -148,6 +148,7 @@ main > .flex-container {
     justify-self: first baseline;
     align-self: start;
     width: 75%;
+    max-width: 800px;
 }
 
 /* selling-point-1 */
