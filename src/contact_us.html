@@ -83,13 +83,13 @@
                 <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" id="contact-email" class="flex-container" target="form_results">
                    <fieldset class="inner-card">
                         <label for="email">Email</label><br>
-                        <input type="email" name="email" id="email" autocomplete="">
+                        <input type="email" name="email" id="email" autocomplete required>
                     
                         <label for="subject">Subject</label><br>
-                        <input type="text" name="subject" id="subject">
+                        <input type="text" name="subject" id="subject" required>
 
                         <label for="email_message">Message</label><br>
-                        <textarea name="email_message" id="email-message"></textarea>
+                        <textarea name="email_message" id="email-message" required></textarea>
                     </fieldset> 
                     <input type="submit" value="Submit"></input>
                 </form>
