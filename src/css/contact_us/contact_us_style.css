@@ -31,6 +31,7 @@ legend {
 input[type='text'],
 input[type='email'],
 input[type='tel'],
+textarea#email-message,
 input[type='datetime-local'] {
     border-radius: .5em;
     border: none;
