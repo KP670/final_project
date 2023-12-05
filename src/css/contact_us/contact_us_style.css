@@ -28,6 +28,15 @@ legend {
     box-shadow: var(--global-box-shadow);
 }
 
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='datetime-local'] {
+    border-radius: .5em;
+    border: none;
+    box-shadow: 2px 2px 4px rgb(49, 49, 49);
+}
+
 input[type='submit'] {
     background-color: var(--primary-col);
     border: none;

@@ -53,19 +53,19 @@ input[type="submit"] {
     font-size: var(--medium-text-font-size);
 }
 
-#contact_email.flex-container {
+#contact-email.flex-container {
     flex-direction: column;
     justify-content: flex-start;
     padding: 1em;
 }
 
-#contact_email input{
+#contact-email input{
     display: block;
     margin-bottom: 1em;
     height: 2em;
 }
 
-#contact_email input[type="submit"] {
+#contact-email input[type="submit"] {
     height: 4em;
 }
 
@@ -118,6 +118,14 @@ legend {
     table th,
     table td {
         padding: 0.5em;
+    }
+
+    #contact-email {
+        width: 50%;
+    }
+
+    #contact-email input{
+        width: 100%;
     }
 
     #form-card {
