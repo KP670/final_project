@@ -337,10 +337,14 @@ main h1 {
 /* height */
 @media only screen and (max-height: 720px) and (orientation: landscape) {
     #mobile-nav .nav-list {
-        width: 90%;
+        width: 80%;
         flex-direction: row;
         justify-content: flex-start;
-        overflow: scroll;
-        gap: 1em;
+        gap: 0.5em;
+    }
+
+    #mobile-nav .nav-list a,
+    #mobile-nav .nav-list li {
+        margin: 0;
     }
 }

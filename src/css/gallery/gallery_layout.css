@@ -10,12 +10,12 @@ main .grid-container {
     flex-wrap: wrap;
     gap: 2em;
     padding: 2em;
-    margin: 2em;
+    margin: 2em auto;
+    max-width: 1024px;
 }
 
 main .grid-container img {
     width: 75%;
-    max-width: 1024px;
     justify-self: center;
     aspect-ratio: 1/1;
 }
