@@ -321,6 +321,10 @@ main > .flex-container {
     .opening-hours-table {
         font-size: var(--small-text-font-size);
     }
+
+    .focus-mode iframe {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 900px) {
