@@ -39,7 +39,7 @@ h1 {
     font-size: 2.5em;
     margin: 0.1em;
     float: left;
-
+    line-height: 1ch;
 }
 
 @media only screen and (max-width: 720px) {
