@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cozy Palms Cafe -- Home</title>
+    <title>Home | Cozy Palms Cafe</title>
 
     <link rel="stylesheet" href="css/master_layout.css">
     <link rel="stylesheet" href="css/master_style.css">
-    <link rel="stylesheet" href="css/layout/index_layout.css">
-    <link rel="stylesheet" href="css/style/index_style.css">
+    <link rel="stylesheet" href="css/index/index_layout.css">
+    <link rel="stylesheet" href="css/index/index_style.css">
     
     <link rel="shortcut icon" href="images/fav_icon/favicon.ico" type="image/x-icon">
 
@@ -29,7 +29,7 @@
                 <ul class="nav-list flex-container">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="about_us.html">About Us</a></li>
                     <li><a href="contact_us.html">Contact Us</a></li>
                 </ul>
@@ -38,25 +38,34 @@
         </div>
     </header>
 
-    <nav id="mobile-nav" class="flex-container hidden">
-        <img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo">
-        <ul class="nav-list flex-container">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="about_us.html">About Us</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-        </ul>
+    <nav id="mobile-nav" style="height: 0%;">
+        <div class="flex-container">
+            
+            <ul class="nav-list flex-container">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+
+
+        </div>
+        
     </nav>
 
-    <button id="nav-button" type="button">test</button>
+    <div id="nav-button" class="nav-open" type="button">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+    </div>
     
     <div class="landing">
         <div class="grid-container">
             <h1>Welcome to your cozy little hobbit hole in the tropics</h1>
             <div class="menu-link">
                 <span>Want to know what is on the menu?</span>
-                <a href="menu.html" target="_blank">Click Here</a>
+                <a href="menu.html">Click Here</a>
             </div>
         </div>  
     </div>
@@ -90,18 +99,32 @@
                         
 
                         <h2>We are open...</h2>
-                        <table class="opening-hours-table">
-                            <tbody>
+                        <div class="container">
+                            <table class="opening-hours-table">
+                                <thead>
                                     <tr>
-                                        <th>Weekdays</th>
-                                        <td>0800-2100</td>
+                                        <th>Monday</th>
+                                        <th>Tuesday</th>
+                                        <th>Wednesday</th>
+                                        <th>Thursday</th>
+                                        <th>Friday</th>
+                                        <th>Saturday</th>
+                                        <th>Sunday</th>
                                     </tr>
+                                </thead>
+                                <tbody>
                                     <tr>
-                                        <th>Weekends</th>
+                                        <td>0800-2100</td>
+                                        <td>0800-2100</td>
+                                        <td>0800-2100</td>
+                                        <td>0800-2100</td>
+                                        <td>0800-2100</td>
+                                        <td>0800-2100</td>
                                         <td>1100-1900</td>
                                     </tr>
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     
                     <div class="reservation-action">
@@ -124,7 +147,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
-                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="about_us.html">About Us</a></li>
                         <li><a href="contact_us.html">Contact Us</a></li>
                     </ul>
@@ -133,9 +156,9 @@
                 <div class="social-media">
                     <h2>Social Media</h2>
                     <ul>
-                        <li><a href="#">Youtube</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">X</a></li>
+                        <li><a href="https://www.youtube.com/@kristiankurtpestano9826" target="_blank">Youtube</a></li>
+                        <li><a href="https//www.facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/KristianKurtDP1a" target="_blank">X</a></li>
                     </ul>
                 </div>
             </div>

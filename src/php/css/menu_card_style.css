@@ -10,6 +10,11 @@ html, body {
 
 .menu-card {
     background-color: white;
+    box-shadow: 4px 4px 16px 8px rgba(0, 0, 0, 0.37);
+}
+
+.menu-card .menu-item-name {
+    font-weight: var(--bold-font-weight);
 }
 
 .menu-card,
@@ -17,6 +22,4 @@ html, body {
     border-radius: 1em;
 }
 
-.menu-card span {
-    font-family: var(--heading-font);
-}
+

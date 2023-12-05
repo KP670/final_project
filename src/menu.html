@@ -3,54 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menu | Cozy Palms Cafe</title>
 
     <link rel="stylesheet" href="css/master_layout.css">
     <link rel="stylesheet" href="css/master_style.css">
-    <link rel="stylesheet" href="css/layout/menu_layout.css">
-    <link rel="stylesheet" href="css/style/menu_style.css">
+    <link rel="stylesheet" href="css/menu/menu_layout.css">
+    <link rel="stylesheet" href="css/menu/menu_style.css">
+
+    <link rel="shortcut icon" href="images/fav_icon/favicon.ico" type="image/x-icon">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
         <div class="flex-container">
             <a href="#main-content" id="skip-nav">Skip to content</a>
+            
             <div class="logo-name flex-container">
-                <a href="index.html"><img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo"></a>
+                <a href="index.html" class="logo-img"><img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo"></a>
                 <span class="name">Cozy Palms Cafe</span>
             </div>  
-            <nav class="desktop-nav flex-container" aria-label="Desktop navigation">
+            
+            <nav id="desktop-nav" class="flex-container" aria-label="Desktop navigation">
                 <ul class="nav-list flex-container">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="about_us.html">About Us</a></li>
                     <li><a href="contact_us.html">Contact Us</a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
+    <nav id="mobile-nav" class="flex-container hidden">
+        <img src="images/logo/cozy_palms_cafe_web_logo.svg" alt="Cozy Palms Cafe Logo" class="logo">
+        <ul class="nav-list flex-container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="nav-button" type="button">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+    </div>
+    
     <main>
-        <div class="grid-container">
-
-            <aside class="menu-filter">
-                <form class="flex-container" method="get">
-                    <fieldset>
-                        <label for="dish-name">Dish Name</label>
-                        <input type="text" name="dish_name" id="dish-name">
-                    </fieldset>
-                    
-                    <fieldset>
-                        <label for="price-range">Price Range</label>
-                        <input type="range" name="price" id="price-range" min="0" max="50">
-                    </fieldset>
-
-                    <input type="button" value="Search">
-                </form>
-            </aside>
-            
-            <iframe class="menu-container" src="php/menu.php"></iframe>
-        
+        <h1>Menu</h1>
+        <div class="flex-container">
+            <iframe id="menu-container" src="php/menu.php"></iframe>
         </div>
     </main>
 
@@ -64,7 +70,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
-                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="about_us.html">About Us</a></li>
                         <li><a href="contact_us.html">Contact Us</a></li>
                     </ul>
@@ -82,15 +88,6 @@
         </div>
         <div class="copyright">Kristian Pestano &copy; 2023</div>
     </footer>
-
-    <nav class="mobile-nav flex-container">
-        <ul class="nav-list flex-container">
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about_us.html">About Us</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-        </ul>
-    </nav>
+    
 </body>
 </html>

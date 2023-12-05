@@ -1,11 +1,24 @@
+<!DOCTYPE html>
 <?php require '../db_config/database.php'?>
 
-<?php
-    $query = "SELECT id, dish_name, dish_price, dish_img FROM dishes";
-    // $menu_set = $conn -> query($query);
+<?php  
+ ;
+function process_sql() {
+    $query = "SELECT * FROM dishes";
+
+    if(isset($_POST['submit'])) {
+        $category = $_POST['category'];
+        $where_clause = 'WHERE category = ' . $category; 
+        return $query = 'SELECT * FROM dishes' . $where_clause;
+    } else {return $query;}
+}
+
+    $sql = process_sql();
+   
+    $result = mysqli_query($conn, $sql);
+    $menu_set = mysqli_fetch_all($result, MYSQLI_ASSOC);
 ?>
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Menu</title>
@@ -17,51 +30,24 @@
 <body>
     <main>
         <div class="flex-container">
-            <div class="menu-card">
-                <img src="../menu_images/dishes/chicken_adobo.jpg" class="menu-" alt="">
-               
-                <div class="menu-information">
-                    <span class="menu-item-name">Menu Item Name</span>
-                    
-                    <div class="menu-item-price">
-                        $10.00
+
+            <?php foreach($menu_set as $menu_item): ?>
+                <?php $dish_img_path = "../menu_images/menu/". $menu_item['menu_item_img'] ?>
+                <div class="menu-card">
+                <img src=<?php echo $dish_img_path ?> alt="<?php echo $menu_item['menu_item_name'] ?>">              
+                    <div class="menu-information">
+
+                        <span class="menu-item-name">
+                            <?php echo $menu_item['menu_item_name'] ?>
+                        </span>
+                        
+                        <span class="menu-item-price">
+                            <?php echo "$" . $menu_item['menu_item_price'] ?>
+                        </span>
+
                     </div>
                 </div>
-            </div>
-
-            <div class="menu-card">
-                <img src="../menu_images/dishes/chicken_adobo.jpg" alt="">
-                
-                <div class="menu-information">
-                    <span class="menu-item-name">Menu Item Name</span>
-                    
-                    <div class="menu-item-price">
-                        $10.00
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-card">
-                <img src="../menu_images/dishes/chicken_adobo.jpg" class="menu-" alt="">
-                
-                <div class="menu-information">
-                    <span class="menu-item-name">Menu Item Name</span>
-                    
-                    <div class="menu-item-price">
-                        $10.00
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-card">
-                <img src="../menu_images/dishes/chicken_adobo.jpg" class="menu-" alt="">
-                
-                <div class="menu-information">
-                    <span class="menu-item-name">Menu Item Name</span>
-                    
-                    <div class="menu-item-price">
-                        $10.00
-                    </div>
+            <?php endforeach; ?>
                 </div>
             </div>
         </div>

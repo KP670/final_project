@@ -4,12 +4,7 @@ header {
     position: sticky;
 }
 
-.landing {
-    margin: auto;
-    width: 1024px;
-    flex-direction: column;
-}
-.landing h1 {
+h1 {
     font-size: var(--big-text-heading);
     width: max-content;
     padding: 0.5em;

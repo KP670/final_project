@@ -53,8 +53,6 @@
 }
 
 .opening-hours-table {
-    width: 90%;
-    margin: auto;
     border: 8px ridge #747474;
     border-collapse: collapse;
 }
@@ -62,7 +60,6 @@
 
 .schedule table td,
 .schedule table th {
-    padding: 0.75em;
     border: 1px solid #202020;
 }
 

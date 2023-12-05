@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+h1 {
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.401);
+    box-shadow: var(--global-box-shadow);
+}
+
+.who-we-are h2 {
+    font-family: var(--logo-font);
+}

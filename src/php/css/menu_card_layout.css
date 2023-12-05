@@ -6,6 +6,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2em;
+    padding: 2em;
 }
 
 .menu-card {
@@ -20,9 +21,9 @@
 }
 
 .menu-item-name {
-    font-size: clamp(1em, 1vw + 1.25em, 2em);
+    font-size: var(--small-text-heading);
 }
 
 .menu-item-price {
-    font-size: clamp(1em, 1vw + 1.25em, 1.5em);
+    font-size: var(--medium-text-font-size);
 }
