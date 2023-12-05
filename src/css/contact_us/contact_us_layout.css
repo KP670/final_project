@@ -69,6 +69,12 @@ input[type="submit"] {
     height: 4em;
 }
 
+#contact-email input,
+#contact-email textarea {
+    width: 100%;
+}
+
+/* reservation form */
 #reservation-form.flex-container {
     gap: 0.5em;
     flex-direction: column;
@@ -125,17 +131,11 @@ legend {
         margin: auto;
     }
 
-    #contact-email input{
-        width: 100%;
-    }
-
     #form-card {
         height: 100%;
         max-width: min-content;
         padding: 0;
     }
-
-
 
     .form-card h2 {
         text-align: center;
