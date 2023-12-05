@@ -37,7 +37,7 @@ main > .flex-container {
 
     position: absolute;
     
-    background: url("../../images/index/back.jpeg");
+    background: url("../../images/index/thumbnail/back_thumb.jpeg");
     background-size: cover;
     background-position: center;
     
