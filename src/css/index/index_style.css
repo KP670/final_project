@@ -30,11 +30,12 @@
 
 .menu-link a:hover {
     background-color: var(--accent-col-desat);
+    transform: scale(1.1);
 }
 
 .menu-link a:active {
     box-shadow: 4px 4px 2px var(--nav-shadow-color);
-
+    transform: scale(0.9);
 }
 
 .menu-link a:active {
