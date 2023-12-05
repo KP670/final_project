@@ -65,7 +65,7 @@ main > .flex-container {
 }
 
 .menu-link span {
-    font-size: var(--large-text-font-size);
+    font-size: var(--small-text-heading);
 }
 
 .menu-link a {

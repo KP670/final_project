@@ -113,6 +113,12 @@ header .flex-container {
     margin: auto;
     position: absolute;
     display: none;
+    margin-bottom: min(auto, 64px);
+}
+
+#mobile-nav .flex-container ul {
+    justify-content: space-evenly;
+    gap: max(2em, 32px);
 }
 
 /* footer layout */
@@ -156,15 +162,10 @@ footer > .flex-container .social-media {
 
 /* main */
 main {
-    width: 80%;
-    margin: auto;
-}
-
-/* main layout */
-main {
     align-content: center;
     min-height: 100vh;
     width: 75%;
+    margin: auto;
 }
 
 /* Universal */
@@ -222,6 +223,7 @@ main h1 {
 
 
 /* Media Queries */
+    /* width */
 @media only screen and (max-width: 1600px) {
     main {
         width: 85%;
@@ -275,15 +277,9 @@ main h1 {
         height: 100%;
     }
 
-    #mobile-nav .flex-container ul {
-        justify-content: space-evenly;
-        gap: max(2em, 32px);
-    }
-
     #mobile-nav .nav-list {
         flex-direction: column;
         margin: auto;
-        height: 30%;
         width: 50% ;
         padding: 4em 2em;
         justify-content: center;
@@ -338,3 +334,13 @@ main h1 {
     }   
 }
 
+/* height */
+@media only screen and (max-height: 720px) and (orientation: landscape) {
+    #mobile-nav .nav-list {
+        width: 90%;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow: scroll;
+        gap: 1em;
+    }
+}
