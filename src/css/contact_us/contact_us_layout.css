@@ -120,8 +120,9 @@ legend {
         padding: 0.5em;
     }
 
-    #contact-email {
+    #contact-email fieldset {
         width: 50%;
+        margin: auto;
     }
 
     #contact-email input{
