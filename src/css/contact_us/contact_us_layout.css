@@ -27,6 +27,7 @@ h1 {
 
 h2 {
     font-size: var(--small-text-heading);
+    text-align: center;
 }
 
 table.contact-information-table {
