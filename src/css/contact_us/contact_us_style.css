@@ -50,3 +50,7 @@ input[type='submit']:active {
     box-shadow: 4px 4px 2px var(--nav-shadow-color);
     transform: translate(1px, 1px) scale(0.95);
 }
+
+#form-results {
+    border: none;
+}
