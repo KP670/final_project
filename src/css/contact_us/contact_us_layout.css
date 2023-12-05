@@ -106,7 +106,7 @@ legend {
 /* iframe */
 #form-results {
     width: 100%;
-    margin: auto;
+    margin: 1em auto;
 }
 
 @media only screen and (max-width:1024px) {
