@@ -75,6 +75,20 @@
     border-collapse: collapse;
 }
 
+.reservation-action img {
+    transition: all;
+    transition-duration: .25s;
+}
+
+.reservation-action img:hover {
+    transform: scale(1.2);
+}
+
+.reservation-action img:active {
+    transform: scale(0.99);
+
+}
+
 
 .schedule table td,
 .schedule table th {

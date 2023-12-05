@@ -140,6 +140,15 @@ footer {
 
 }
 
+.banner {
+    transition: all;
+    transition-duration: .25s;
+}
+
+.banner:hover {
+    transform: scale(1.2);
+}
+
 footer a {
     color: var(--footer-link-font-color);
     text-decoration: none;
